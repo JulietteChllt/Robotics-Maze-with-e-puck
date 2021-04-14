@@ -11,11 +11,14 @@
 #define MASK_RED			7
 #define THRESHOLD			30
 #define THRESHOLD_BLACK		25
+#define WIDTH_SLOPE			5
 #define MIN_LINE_WIDTH		40
+#define GOAL_DISTANCE 	    10.0f
+#define MAX_DISTANCE 		25.0f
 #define PXTOCM				785.0f //experimental value
-#define C1 			0.0004f		//coefficient polynome interpolation
-#define C2			0.2082f 	//coefficient polynome interpolation
-#define C3			34.2f			//coefficient polynome interpolation
+#define C1 			        0.0004f		//coefficient polynome interpolation
+#define C2					0.2082f 	//coefficient polynome interpolation
+#define C3					34.2f			//coefficient polynome interpolation
 
 
 static uint16_t line_position = IMAGE_BUFFER_SIZE/2;
@@ -112,7 +115,7 @@ void process_image_start(void){
 	return width;
 }*/
 
-uint16_t detect_black_line(uint8_t * image){
+/*uint16_t detect_black_line(uint8_t * image){
 	uint32_t avg_pixel = 0;
 	uint16_t i = 0;
 	uint16_t start_pixel = 0;
@@ -160,4 +163,83 @@ uint16_t detect_black_line(uint8_t * image){
 		width=0;
 	}
 	return width;
+}*/
+
+uint16_t detect_black_line(uint8_t * image){
+	uint16_t i = 0, begin = 0, end = 0, width = 0;
+	uint8_t stop = 0, wrong_line = 0, line_not_found = 0;
+	uint32_t mean = 0;
+
+	static uint16_t last_width = PXTOCM/GOAL_DISTANCE;
+
+	//performs an average
+	for(uint16_t i = 0 ; i < IMAGE_BUFFER_SIZE ; i++){
+		mean += image[i];
+	}
+	mean /= IMAGE_BUFFER_SIZE;
+
+	do{
+		wrong_line = 0;
+		//search for a begin
+		while(stop == 0 && i < (IMAGE_BUFFER_SIZE - WIDTH_SLOPE))
+		{
+			//the slope must at least be WIDTH_SLOPE wide and is compared
+			//to the mean of the image
+			if(image[i] > mean && image[i+WIDTH_SLOPE] < mean)
+			{
+				begin = i;
+				stop = 1;
+			}
+			i++;
+		}
+		//if a begin was found, search for an end
+		if (i < (IMAGE_BUFFER_SIZE - WIDTH_SLOPE) && begin)
+		{
+			stop = 0;
+
+			while(stop == 0 && i < IMAGE_BUFFER_SIZE)
+			{
+				if(image[i] > mean && image[i-WIDTH_SLOPE] < mean)
+				{
+					end = i;
+					stop = 1;
+				}
+				i++;
+			}
+			//if an end was not found
+			if (i > IMAGE_BUFFER_SIZE || !end)
+			{
+				line_not_found = 1;
+			}
+		}
+		else//if no begin was found
+		{
+			line_not_found = 1;
+		}
+
+		//if a line too small has been detected, continues the search
+		if(!line_not_found && (end-begin) < MIN_LINE_WIDTH){
+			i = end;
+			begin = 0;
+			end = 0;
+			stop = 0;
+			wrong_line = 1;
+		}
+	}while(wrong_line);
+
+	if(line_not_found){
+		begin = 0;
+		end = 0;
+		width = last_width;
+	}else{
+		last_width = width = (end - begin);
+		line_position = (begin + end)/2; //gives the line position.
+	}
+
+	//sets a maximum width or returns the measured width
+	if((PXTOCM/width) > MAX_DISTANCE){
+		return PXTOCM/MAX_DISTANCE;
+	}else{
+		return width;
+	}
 }
