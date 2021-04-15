@@ -6,7 +6,7 @@ Description du projet : nous voulons que notre e-puck traverse un labyrinthe san
 
 Etapes : 1- Faire avancer le robot le long d'un mur 
          2- Detecter la presence d'un mur à gauche, devant et à droite de l'e-puck 
-         3- Si 1 mur : effectuer une rotation du robot vers le mur et activer la camera pour voir la couleur du mur et ainsi choisir ou aller par la suite
+         3- Si 1 mur : effectuer une rotation du robot vers le mur et activer la camera pour voir la couleur du mur et ainsi choisir ou aller par la suite : aller à gauche si le mur est de couleur rouge et aller à droite si il est bleu
          4- Si 2 murs : continuer dans la direction non murée
          5- Si 3 murs : ouvrir la camera pour vérifier que le mur est vert, si c'est le cas allumer les led pour signifier que le défi de gagné.
 
