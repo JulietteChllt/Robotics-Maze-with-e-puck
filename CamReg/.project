@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>mini_projet</name>
+	<name>TP4_CamReg</name>
 	<comment></comment>
 	<projects>
 	</projects>
@@ -28,13 +28,7 @@
 		<link>
 			<name>e-puck2_main-processor</name>
 			<type>2</type>
-			<locationURI>copy_PARENT/lib/e-puck2_main-processor</locationURI>
+			<locationURI>PARENT-2-PROJECT_LOC/lib/e-puck2_main-processor</locationURI>
 		</link>
 	</linkedResources>
-	<variableList>
-		<variable>
-			<name>copy_PARENT</name>
-			<value>$%7BPARENT-2-ECLIPSE_HOME%7D/MicroInfo</value>
-		</variable>
-	</variableList>
 </projectDescription>

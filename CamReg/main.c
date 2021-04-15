@@ -11,9 +11,11 @@
 #include <motors.h>
 #include <camera/po8030.h>
 #include <chprintf.h>
+#include <proximity.c>
 
 #include <pi_regulator.h>
 #include <process_image.h>
+#include <controle.h>
 
 void SendUint8ToComputer(uint8_t* data, uint16_t size) 
 {
@@ -51,9 +53,17 @@ int main(void)
 	//inits the motors
 	motors_init();
 
+	//init IR sensor
+	proximity_start();
+	calibrate_ir(); //première calibration
+
+
 	//stars the threads for the pi regulator and the processing of the image
 	pi_regulator_start();
 	process_image_start();
+
+	//stars the threads for the control thread
+	controle_start();
 
     /* Infinite loop. */
     while (1) {
