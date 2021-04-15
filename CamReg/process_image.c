@@ -17,8 +17,7 @@
 #define MAX_DISTANCE 	25.0f
 #define WIDTH_SLOPE		57
 #define GOAL_DISTANCE 	10.0f
-#define RIGHT			2
-#define LEFT			1
+
 
 
 
@@ -87,6 +86,7 @@ static THD_FUNCTION(ProcessImage, arg) {
 			image_right[i]=img_buff_ptr[2*i+1] & ~MASK_BLUE;
 		}
 
+		choose_direction(image_left, image_right);
 		/*nbr_image=(nbr_image+1)%2;
 
 		if(!nbr_image)
@@ -122,7 +122,6 @@ void choose_direction(uint8_t* image_l, uint8_t* image_r){
 	if(value_l < value_r){ //AJOUTER THRESHOLD??
 		direction = RIGHT;
 	}
-
 	else direction = LEFT;
 }
 

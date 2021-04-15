@@ -12,6 +12,7 @@
 #include <camera/po8030.h>
 #include <chprintf.h>
 #include "sensors/proximity.h"
+#include "main.h"
 
 
 #include <pi_regulator.h>
