@@ -41,7 +41,7 @@ static THD_FUNCTION(PiRegulator, arg) {
         if(wait>=5)
         {
         	//chprintf((BaseSequentialStream *) &SDU1, "Up = %f, Ui= %f	\n",kp*err, ki*sum_err);
-        	chprintf((BaseSequentialStream *) &SDU1, "distance cm = %f, erreur = %f, somm err = %f \n",get_distance_cm(), err, sum_err);
+        	//chprintf((BaseSequentialStream *) &SDU1, "distance cm = %f, erreur = %f, somm err = %f \n",get_distance_cm(), err, sum_err);
         	wait=0;
 
         }
@@ -52,8 +52,8 @@ static THD_FUNCTION(PiRegulator, arg) {
         else speed = 0; //vitesse de sécurité assez lente
         */
         //applies the speed from the PI regulator
-		right_motor_set_speed(command);
-		left_motor_set_speed(command);
+		//right_motor_set_speed(command);
+		//left_motor_set_speed(command);
 
 		prev_err=err;
 		wait++;

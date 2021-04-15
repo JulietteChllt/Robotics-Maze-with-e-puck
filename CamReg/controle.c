@@ -10,11 +10,11 @@
 #include <usbcfg.h>
 #include "stdio.h"
 #include <main.h>
-#include "controle.h"
+
 #include "sensors/proximity.h"
 
 
-#define NB_SENSORS 8
+#define NB_SENSORS 		8
 #define SENSORFRONT1 	0
 #define SENSORFRONT2	7
 #define SENSORLEFT		5
@@ -47,6 +47,9 @@ static THD_FUNCTION(Controle, arg){
 	}
 
 }
+
+
+
 void controle_start(void){
 	chThdCreateStatic(waControle, sizeof(waControle), NORMALPRIO, Controle, NULL);
 }
@@ -68,7 +71,6 @@ int calibrate_ambient_light(uint8_t sensor1){
 	calibration_factor = (get_ambient_light(sensor1)/avg_light - 1)*avg_sensor ;
 	return get_calibrated_prox(sensor1)+calibration_factor;
 }
-
 
 uint8_t get_free_space(uint8_t sensor1){
 	return (calibrate_ambient_light(sensor1)>THRESHOLD_CLOSE_OBSTACLE)? 1: 0;
