@@ -22,8 +22,8 @@
 
 
 
-//static uint16_t line_position = IMAGE_BUFFER_SIZE/2;
-//volatile static float distance_cm = 0;
+static uint16_t line_position = IMAGE_BUFFER_SIZE/2;
+volatile static float distance_cm = 0;
 
 static uint8_t direction=0; //gauche = 1 et droite = 2 pour pas avoir de probleme avec 0(?)
 

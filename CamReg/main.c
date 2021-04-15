@@ -11,11 +11,16 @@
 #include <motors.h>
 #include <camera/po8030.h>
 #include <chprintf.h>
-#include <proximity.c>
+#include "sensors/proximity.h"
+
 
 #include <pi_regulator.h>
 #include <process_image.h>
 #include <controle.h>
+
+messagebus_t bus;
+MUTEX_DECL (bus_lock);
+CONDVAR_DECL(bus_condvar);
 
 void SendUint8ToComputer(uint8_t* data, uint16_t size) 
 {
@@ -52,6 +57,7 @@ int main(void)
 	po8030_start();
 	//inits the motors
 	motors_init();
+	messagebus_init(&bus, &bus_lock, &bus_condvar);
 
 	//init IR sensor
 	proximity_start();

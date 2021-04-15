@@ -9,8 +9,10 @@
 #include <chprintf.h>
 #include <usbcfg.h>
 #include "stdio.h"
+#include <main.h>
 
-#include <proximity.h>
+#include "sensors/proximity.h"
+
 
 #define MAX_SENSOR 7
 
