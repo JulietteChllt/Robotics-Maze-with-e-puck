@@ -4,11 +4,16 @@
 #include <usbcfg.h>
 #include <chprintf.h>
 
+#include "sensors/proximity.h"
+
 
 #include <main.h>
 #include <motors.h>
 #include <pi_regulator.h>
 #include <process_image.h>
+#include <controle.h>
+
+#define WORKING_SPEED 200
 
 static THD_WORKING_AREA(waPiRegulator, 256);
 static THD_FUNCTION(PiRegulator, arg) {
@@ -18,45 +23,38 @@ static THD_FUNCTION(PiRegulator, arg) {
 
     systime_t time;
 
-    int16_t speed = 0;
-    float reference = 10.0;
-    float err=0;
-    float sum_err = 0;
-    float prev_err=0;
-    uint16_t kp=500; //determiner kp ATTENTION PEUT ETRE 16BIT??
-    uint8_t ki=4;
+    uint16_t err=0;
+    uint16_t kp=10; //determiner kp ATTENTION PEUT ETRE 16BIT??
     int16_t command=0;
-    uint16_t wait=0;
-
+    int reference = get_reference();
     while(1){
         time = chVTGetSystemTime();
 
         /*
 		*	To complete
 		*/
-        err=get_distance_cm()-reference;
-        sum_err += err;
+        err=calibrate_ambient_light(SENSORRIGHT)-reference;
+        command= abs(kp*err);
+
+        /*if(err<0){ //on est trop eloigné du mur de droite --> ajouter un peu de vitesse au moteur de gauche
+        	right_motor_set_speed(WORKING_SPEED);
+        	left_motor_set_speed(WORKING_SPEED + command);
+        }
+        else{
+        	right_motor_set_speed(WORKING_SPEED + command);
+        	left_motor_set_speed(WORKING_SPEED);
+        }*/
+
+        //chprintf((BaseSequentialStream *) &SDU1, "valeur senseur droit = %d, ref= %d err= %d\n", get_calibrated_prox(SENSORRIGHT),get_reference(), err);
+
+        /*sum_err += err;
         if(sum_err > MOTOR_SPEED_LIMIT/ki)
         	sum_err = MOTOR_SPEED_LIMIT/ki;
-        if(wait>=5)
-        {
-        	//chprintf((BaseSequentialStream *) &SDU1, "Up = %f, Ui= %f	\n",kp*err, ki*sum_err);
-        	//chprintf((BaseSequentialStream *) &SDU1, "distance cm = %f, erreur = %f, somm err = %f \n",get_distance_cm(), err, sum_err);
-        	wait=0;
+         */
 
-        }
-
-        command= (int16_t) kp*err + ki*sum_err; //PROBLEME AVEC TERME INTEGRAL!!!!!
-       /* if(command<MOTOR_SPEED_LIMIT)
-        	speed=command;
-        else speed = 0; //vitesse de sécurité assez lente
-        */
         //applies the speed from the PI regulator
-		//right_motor_set_speed(command);
-		//left_motor_set_speed(command);
 
-		prev_err=err;
-		wait++;
+
 
         //100Hz
         chThdSleepUntilWindowed(time, time + MS2ST(10));
