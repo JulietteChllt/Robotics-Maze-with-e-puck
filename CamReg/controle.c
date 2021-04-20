@@ -48,7 +48,7 @@ static THD_FUNCTION(Controle, arg){
 		}
 
 		if(i==50)
-			chprintf((BaseSequentialStream *) &SDU1, "valeur senseur droit = %d\n reference = %d",get_calibrated_prox(SENSORRIGHT), variable_reference);
+			//chprintf((BaseSequentialStream *) &SDU1, "valeur senseur droit = %d\n reference = %d",get_calibrated_prox(SENSORRIGHT), variable_reference);
 
 		i++;
 		//chBSemSignal(&open_camera_sem); //a appeller quand on a detecté un croisement
