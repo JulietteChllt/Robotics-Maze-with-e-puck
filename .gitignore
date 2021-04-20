@@ -1,3 +1,7 @@
+#Folders
+CamReg/build/
+CamReg/.settings/
+
 # Prerequisites
 *.d
 
@@ -51,3 +55,6 @@ Module.symvers
 Mkfile.old
 dkms.conf
 *.xml
+CamReg/TP4_CamReg.launch
+CamReg/.project
+CamReg/.cproject
