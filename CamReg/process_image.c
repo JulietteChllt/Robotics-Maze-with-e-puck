@@ -86,7 +86,6 @@ static THD_FUNCTION(ProcessImage, arg) {
 			image_right[i]=img_buff_ptr[2*i+1] & ~MASK_BLUE;
 		}
 
-		choose_direction(image_left, image_right);
 		/*nbr_image=(nbr_image+1)%2;
 
 		if(!nbr_image)
@@ -114,7 +113,7 @@ void choose_direction(uint8_t* image_l, uint8_t* image_r){
 	uint16_t value_r=0; //ATTENTION PEUT ETRE 16 BIT TROP PETIT
 	uint16_t i=0;
 
-	for(i;i<IMAGE_BUFFER_SIZE;i++){
+	for(i=0;i<IMAGE_BUFFER_SIZE;i++){
 		value_l+=image_l[i];
 		value_r+=image_r[i];
 	}
@@ -122,6 +121,7 @@ void choose_direction(uint8_t* image_l, uint8_t* image_r){
 	if(value_l < value_r){ //AJOUTER THRESHOLD??
 		direction = RIGHT;
 	}
+
 	else direction = LEFT;
 }
 

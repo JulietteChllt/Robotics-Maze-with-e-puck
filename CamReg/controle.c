@@ -10,19 +10,17 @@
 #include <usbcfg.h>
 #include "stdio.h"
 #include <main.h>
-#include "controle.h"
+
 #include "sensors/proximity.h"
+#include "controle.h"
 
 
-#define NB_SENSORS 8
-#define SENSORFRONT1 	0
-#define SENSORFRONT2	7
-#define SENSORLEFT		5
-#define SENSORRIGHT		2
-#define THRESHOLD_CLOSE_OBSTACLE 130
+
 
 static BSEMAPHORE_DECL(open_camera_sem, TRUE);
 
+
+volatile static int variable_reference=0;
 
 
 static THD_WORKING_AREA(waControle, 256); //changer taille??
@@ -32,21 +30,35 @@ static THD_FUNCTION(Controle, arg){
 	chRegSetThreadName(__FUNCTION__);
 	(void)arg;
 	uint8_t i=0;
-	int sensor_val=0;
-	int ambient_light=0;
+	//int sensor_val=0;
+	uint8_t did_ref=0;
+	int old_ref=0, new_ref=0;
 	while(1){
-		for(i=0;i<NB_SENSORS;i++){
+		/*for(i=0;i<NB_SENSORS;i++){
 			sensor_val=get_calibrated_prox(i);
-			ambient_light = get_ambient_light(i);
-			chprintf((BaseSequentialStream *) &SDU1, "valeur senseur %d = %d\n",i, sensor_val); //ENLEVER LES PRINT QUAND PROJET FONCTIONNE
+			//chprintf((BaseSequentialStream *) &SDU1, "valeur senseur %d = %d\n",i, sensor_val); //ENLEVER LES PRINT QUAND PROJET FONCTIONNE
+		}*/
+		while(!did_ref){ //IL FAUT TROUVER MOYEN DE BIEN CALIBRER LA REFERENCE !!!!
+			//chThdSleepMilliseconds(20);
+			do_new_reference(SENSORRIGHT);
+			new_ref=variable_reference;
+			if(new_ref>= STABILITY_THRESHOLD && abs(new_ref-old_ref)<STABILITY_THRESHOLD)
+				did_ref=1;
+			else old_ref=new_ref;
 		}
 
+		if(i==50)
+			chprintf((BaseSequentialStream *) &SDU1, "valeur senseur droit = %d\n reference = %d",get_calibrated_prox(SENSORRIGHT), variable_reference);
 
+		i++;
 		//chBSemSignal(&open_camera_sem); //a appeller quand on a detecté un croisement
-		chThdSleepMilliseconds(10); //ou utiliser chThdSleepUntilWindowed(time, time + MS2ST(10));
+		chThdSleepMilliseconds(5); //ou utiliser chThdSleepUntilWindowed(time, time + MS2ST(10));
 	}
 
 }
+
+
+
 void controle_start(void){
 	chThdCreateStatic(waControle, sizeof(waControle), NORMALPRIO, Controle, NULL);
 }
@@ -55,7 +67,7 @@ void wait_semaphore_ready(void){
 	chBSemWait(&open_camera_sem);
 }
 
-int calibrate_ambient_light(uint8_t sensor1){
+int calibrate_ambient_light(uint8_t sensor1){ //penser a utiliser get_prox pour la calibration et eliminer lumiere ambiante
 	int calibration_factor=0;
 	uint16_t avg_light=0;
 	uint16_t avg_sensor=0;
@@ -69,13 +81,12 @@ int calibrate_ambient_light(uint8_t sensor1){
 	return get_calibrated_prox(sensor1)+calibration_factor;
 }
 
-
 uint8_t get_free_space(uint8_t sensor1){
 	return (calibrate_ambient_light(sensor1)>THRESHOLD_CLOSE_OBSTACLE)? 1: 0;
 }
 
 uint8_t get_free_space_front(void){
-	return (get_free_space(SENSORFRONT1)+get_free_space(SENSORFRONT2))/2;
+	return ((calibrate_ambient_light(SENSORFRONT1)+calibrate_ambient_light(SENSORFRONT2))/2>THRESHOLD_CLOSE_OBSTACLE)? 1: 0;;
 }
 
 uint8_t get_free_space_left(void){
@@ -85,3 +96,12 @@ uint8_t get_free_space_left(void){
 uint8_t get_free_space_right(void){
 	return get_free_space(SENSORRIGHT);
 }
+
+void do_new_reference(uint8_t sensor){ //faire appel a cette fonction en debut de programme puis a chauqe fois qu'on fait un quart de tour
+	variable_reference=get_calibrated_prox(sensor);
+}
+
+int get_reference(void){
+	return variable_reference;
+}
+

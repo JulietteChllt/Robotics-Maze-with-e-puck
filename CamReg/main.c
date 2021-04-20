@@ -10,9 +10,8 @@
 #include <main.h>
 #include <motors.h>
 #include <camera/po8030.h>
-#include <chprintf.h>
+#include <chprintf.h> //ENLEVER QUAND ON A FINI DE TUNER LE PROJET
 #include "sensors/proximity.h"
-#include "main.h"
 
 
 #include <pi_regulator.h>
@@ -63,6 +62,7 @@ int main(void)
 	//init IR sensor
 	proximity_start();
 	calibrate_ir(); //première calibration
+
 
 
 	//stars the threads for the pi regulator and the processing of the image
