@@ -15,7 +15,9 @@
 
 static BSEMAPHORE_DECL(open_camera_sem, TRUE);
 
-volatile static int variable_reference=0;
+volatile static int variable_reference_right=0;
+volatile static int variable_reference_left=0;
+
 
 static THD_WORKING_AREA(waControle, 256); //changer taille??
 static THD_FUNCTION(Controle, arg){
@@ -25,26 +27,23 @@ static THD_FUNCTION(Controle, arg){
 	(void)arg;
 	uint8_t i=0;
 	//int sensor_val=0;
+	int old_ref_right=0, new_ref_right=0,old_ref_left=0, new_ref_left=0;
 	uint8_t did_ref=0;
-	int old_ref=0, new_ref=0;
 	while(1){
-		/*for(i=0;i<NB_SENSORS;i++){
-			sensor_val=get_calibrated_prox(i);
-			//chprintf((BaseSequentialStream *) &SDU1, "valeur senseur %d = %d\n",i, sensor_val); //ENLEVER LES PRINT QUAND PROJET FONCTIONNE
-		}*/
-		while(!did_ref){ //IL FAUT TROUVER MOYEN DE BIEN CALIBRER LA REFERENCE !!!!
-			//chThdSleepMilliseconds(20);
-			do_new_reference(SENSORRIGHT);
-			new_ref=variable_reference;
-			if(new_ref>= STABILITY_THRESHOLD && abs(new_ref-old_ref)<STABILITY_THRESHOLD)
+
+		while(!did_ref){
+			do_new_reference();
+			new_ref_right=variable_reference_right;
+			new_ref_left=variable_reference_left;
+			if((new_ref_right>= STABILITY_THRESHOLD && abs(new_ref_right-old_ref_right)<STABILITY_THRESHOLD) ||(new_ref_left>= STABILITY_THRESHOLD && abs(new_ref_left-old_ref_left)<STABILITY_THRESHOLD))
 				did_ref=1;
-			else old_ref=new_ref;
+			else {
+				old_ref_right=new_ref_right;
+				old_ref_left=new_ref_left;
+			}
 		}
 
-		if(i==50)
-			//chprintf((BaseSequentialStream *) &SDU1, "valeur senseur droit = %d\n reference = %d",get_calibrated_prox(SENSORRIGHT), variable_reference);
 
-		i++;
 		//chBSemSignal(&open_camera_sem); //a appeller quand on a detecté un croisement
 		chThdSleepMilliseconds(5); //ou utiliser chThdSleepUntilWindowed(time, time + MS2ST(10));
 	}
@@ -88,12 +87,17 @@ uint8_t get_free_space_right(void){
 	return get_free_space(SENSORRIGHT);
 }
 
-void do_new_reference(uint8_t sensor){ //faire appel a cette fonction en debut de programme puis a chauqe fois qu'on fait un quart de tour
-	variable_reference=get_calibrated_prox(sensor);
+void do_new_reference(void){ //faire appel a cette fonction en debut de programme puis a chauqe fois qu'on fait un quart de tour
+	variable_reference_right=get_calibrated_prox(SENSORRIGHT);
+	variable_reference_left=get_calibrated_prox(SENSORLEFT);
 }
 
-int get_reference(void){
-	return variable_reference;
+int get_reference_right(void){
+	return variable_reference_right;
+}
+
+int get_reference_left(void){
+	return variable_reference_left;
 }
 
 uint8_t get_possible_directions(void){

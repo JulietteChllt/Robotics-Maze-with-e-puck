@@ -23,8 +23,10 @@ uint8_t get_free_space(uint8_t sensor1);
 uint8_t get_free_space_front(void);
 uint8_t get_free_space_left(void);
 uint8_t get_free_space_right(void);
-void do_new_reference(uint8_t sensor);
-int get_reference(void);
+void do_new_reference(void);
+int get_reference_right(void);
+int get_reference_left(void);
 uint8_t get_possible_directions(void);
+uint8_t do_next_action(void);
 
 #endif /* CONTROLE_H_ */
