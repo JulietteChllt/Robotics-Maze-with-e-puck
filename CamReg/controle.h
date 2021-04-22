@@ -25,6 +25,7 @@ uint8_t get_free_space_left(void);
 uint8_t get_free_space_right(void);
 void do_new_reference(uint8_t sensor);
 int get_reference(void);
+uint8_t get_possible_directions(void){
 
 
 

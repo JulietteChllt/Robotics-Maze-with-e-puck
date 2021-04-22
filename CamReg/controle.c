@@ -10,18 +10,12 @@
 #include <usbcfg.h>
 #include "stdio.h"
 #include <main.h>
-
 #include "sensors/proximity.h"
 #include "controle.h"
 
-
-
-
 static BSEMAPHORE_DECL(open_camera_sem, TRUE);
 
-
 volatile static int variable_reference=0;
-
 
 static THD_WORKING_AREA(waControle, 256); //changer taille??
 static THD_FUNCTION(Controle, arg){
@@ -54,10 +48,7 @@ static THD_FUNCTION(Controle, arg){
 		//chBSemSignal(&open_camera_sem); //a appeller quand on a detecté un croisement
 		chThdSleepMilliseconds(5); //ou utiliser chThdSleepUntilWindowed(time, time + MS2ST(10));
 	}
-
 }
-
-
 
 void controle_start(void){
 	chThdCreateStatic(waControle, sizeof(waControle), NORMALPRIO, Controle, NULL);
@@ -103,5 +94,31 @@ void do_new_reference(uint8_t sensor){ //faire appel a cette fonction en debut d
 
 int get_reference(void){
 	return variable_reference;
+}
+
+uint8_t get_possible_directions(void){
+	return get_free_space_front()+get_free_space_left()+get_free_space_right();
+}
+
+uint8_t do_next_action(void){
+	uint8_t possible_direction = get_possible_directions();
+	if(possible_direction==0){
+		//check that the wall is green and activate led
+	}
+	else if(possible_direction==1){
+
+	}
+	else if (possible_direction==2){
+		// look at the wall to know where to go
+		if(get_free_space_front()==0){
+			//open cam
+			}
+		else if (get_free_space_left==0){
+		// turn to the left and open cam
+			}
+		else if(get_free_space_right==0){
+		//turn to the right and open cam
+		}
+	}
 }
 
