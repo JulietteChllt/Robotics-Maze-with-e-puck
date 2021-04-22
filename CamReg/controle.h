@@ -14,7 +14,7 @@
 #define SENSORLEFT		5
 #define SENSORRIGHT		2
 #define THRESHOLD_CLOSE_OBSTACLE 130
-#define STABILITY_THRESHOLD 10
+#define STABILITY_THRESHOLD 20
 
 void controle_start(void);
 void wait_semaphore_ready(void);
