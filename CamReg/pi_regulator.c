@@ -10,9 +10,11 @@
 #include <process_image.h>
 #include <controle.h>
 
-#define WORKING_SPEED 300
-#define K_P 		  10
-#define K_I			  3
+#define WORKING_SPEED 		300
+#define K_P 		  		10
+#define K_I			  		3
+#define QUARTER_TURN  		250 // corresponds to 250 steps
+#define SMALL_STEP_FORWARD	350 // about 4 cm
 
 static THD_WORKING_AREA(waPiRegulator, 256);
 static THD_FUNCTION(PiRegulator, arg) {
@@ -20,12 +22,73 @@ static THD_FUNCTION(PiRegulator, arg) {
 	chRegSetThreadName(__FUNCTION__);
 	(void)arg;
 	systime_t time;
+	int32_t pos_left_motor=0;
+	int32_t pos_right_motor=0;
 
 
 	while(1){
 		time = chVTGetSystemTime();
 
-		follow_wall(SENSORLEFT);
+		// if one direction possible, go in that direction while following the right wall
+		if(get_possible_directions()==1){
+			if(get_direction_changed()==0){
+				follow_wall(SENSORRIGHT);
+			}
+			else{
+				pos_left_motor=left_motor_get_pos();
+				pos_right_motor=right_motor_get_pos();
+				if(get_free_space_left()==1){
+					// turn 90° counterclockwise
+					while(left_motor_get_pos()!=pos_left_motor-QUARTER_TURN && right_motor_get_pos()!=pos_right_motor+QUARTER_TURN){
+						left_motor_set_speed(-WORKING_SPEED);
+						right_motor_set_speed(WORKING_SPEED);
+					}
+				}
+				else if(get_free_space_right()==1){
+					//turn 90° clockwise
+					while(left_motor_get_pos()!=pos_left_motor+QUARTER_TURN && right_motor_get_pos()!=pos_right_motor-QUARTER_TURN){
+						left_motor_set_speed(WORKING_SPEED);
+						right_motor_set_speed(-WORKING_SPEED);
+					}
+				}
+				pos_left_motor=left_motor_get_pos();
+				pos_right_motor=right_motor_get_pos();
+				// move forward
+				while(left_motor_get_pos()!=pos_left_motor+SMALL_STEP_FORWARD && right_motor_get_pos()!=pos_right_motor+SMALL_STEP_FORWARD){
+					left_motor_set_speed(WORKING_SPEED);
+					right_motor_set_speed(WORKING_SPEED);
+				}
+				//redo reference
+				do_new_reference();
+			}
+		}
+		else if (get_possible_directions()==2){
+			pos_left_motor=left_motor_get_pos();
+			pos_right_motor=right_motor_get_pos();
+			switch(get_wall_position()){
+			case FRONT:
+				//open camera
+				break;
+			case LEFT:{
+				// turn towards the wall and open camera
+				while(left_motor_get_pos()!=pos_left_motor-QUARTER_TURN && right_motor_get_pos()!=pos_right_motor+QUARTER_TURN){
+					left_motor_set_speed(-WORKING_SPEED);
+					right_motor_set_speed(WORKING_SPEED);
+				}
+			}
+			break;
+			case RIGHT:{
+				// turn towards the wall and open camera
+				while(left_motor_get_pos()!=pos_left_motor+QUARTER_TURN && right_motor_get_pos()!=pos_right_motor-QUARTER_TURN){
+					left_motor_set_speed(WORKING_SPEED);
+					right_motor_set_speed(-WORKING_SPEED);
+				}
+			}
+			break;
+			}
+		}
+
+		//follow_wall(SENSORLEFT);
 
 		/*switch(get_possible_directions()){
 		case 0:

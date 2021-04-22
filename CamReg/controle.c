@@ -17,6 +17,7 @@ static BSEMAPHORE_DECL(open_camera_sem, TRUE);
 
 volatile static int variable_reference_right=0;
 volatile static int variable_reference_left=0;
+volatile static uint8_t available_dir_changed=0;
 
 
 static THD_WORKING_AREA(waControle, 256); //changer taille??
@@ -26,10 +27,26 @@ static THD_FUNCTION(Controle, arg){
 	chRegSetThreadName(__FUNCTION__);
 	(void)arg;
 	uint8_t i=0;
+	uint8_t prev_front=0, prev_left=0, prev_right =0;
+	uint8_t new_front=0, new_left=0, new_right=0;
+
+
+
 	//int sensor_val=0;
 	int old_ref_right=0, new_ref_right=0,old_ref_left=0, new_ref_left=0;
 	uint8_t did_ref=0;
 	while(1){
+
+		new_front= get_free_space_front();
+		new_left= get_free_space_left();
+		new_right= get_free_space_right();
+
+		if(get_possible_directions()==1 && (new_front!=prev_front || new_right!= prev_right || new_left!=prev_left)){
+			available_dir_changed = 1;
+		}
+		else{
+			available_dir_changed =0;
+		}
 
 		while(!did_ref){
 			do_new_reference();
@@ -57,7 +74,7 @@ void wait_semaphore_ready(void){
 	chBSemWait(&open_camera_sem);
 }
 
-int calibrate_ambient_light(uint8_t sensor1){ //penser a utiliser get_prox pour la calibration et eliminer lumiere ambiante
+/*int calibrate_ambient_light(uint8_t sensor1){ //penser a utiliser get_prox pour la calibration et eliminer lumiere ambiante
 	int calibration_factor=0;
 	uint16_t avg_light=0;
 	uint16_t avg_sensor=0;
@@ -69,14 +86,14 @@ int calibrate_ambient_light(uint8_t sensor1){ //penser a utiliser get_prox pour 
 	avg_sensor/=NB_SENSORS;
 	calibration_factor = (get_ambient_light(sensor1)/avg_light - 1)*avg_sensor ;
 	return get_calibrated_prox(sensor1)+calibration_factor;
-}
+}*/
 
 uint8_t get_free_space(uint8_t sensor1){
-	return (calibrate_ambient_light(sensor1)>THRESHOLD_CLOSE_OBSTACLE)? 1: 0;
+	return (get_calibrated_prox(sensor1)>THRESHOLD_CLOSE_OBSTACLE)? 1: 0;
 }
 
 uint8_t get_free_space_front(void){
-	return ((calibrate_ambient_light(SENSORFRONT1)+calibrate_ambient_light(SENSORFRONT2))/2>THRESHOLD_CLOSE_OBSTACLE)? 1: 0;;
+	return ((get_calibrated_prox(SENSORFRONT1)+get_calibrated_prox(SENSORFRONT2))/2>THRESHOLD_CLOSE_OBSTACLE)? 1: 0;;
 }
 
 uint8_t get_free_space_left(void){
@@ -85,6 +102,10 @@ uint8_t get_free_space_left(void){
 
 uint8_t get_free_space_right(void){
 	return get_free_space(SENSORRIGHT);
+}
+
+uint8_t get_direction_changed(void){
+	return available_dir_changed;
 }
 
 void do_new_reference(void){ //faire appel a cette fonction en debut de programme puis a chauqe fois qu'on fait un quart de tour
@@ -104,25 +125,14 @@ uint8_t get_possible_directions(void){
 	return (get_free_space_front()+get_free_space_left()+get_free_space_right());
 }
 
-uint8_t do_next_action(void){
-	uint8_t possible_direction = get_possible_directions();
-	if(possible_direction==0){
-		//check that the wall is green and activate led
-	}
-	else if(possible_direction==1){
-
-	}
-	else if (possible_direction==2){
-		// look at the wall to know where to go
-		if(get_free_space_front()==0){
-			//open cam
-			}
-		else if (get_free_space_left()==0){
-		// turn to the left and open cam
-			}
-		else if(get_free_space_right()==0){
-		//turn to the right and open cam
-		}
-	}
+uint8_t get_wall_position(void){
+	if(get_free_space_left()==0)
+		return LEFT;
+	else if(get_free_space_front()==0)
+		return FRONT;
+	else if (get_free_space_right()==0)
+		return RIGHT;
+	else return -1;
 }
+
 
