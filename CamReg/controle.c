@@ -97,7 +97,7 @@ int get_reference(void){
 }
 
 uint8_t get_possible_directions(void){
-	return get_free_space_front()+get_free_space_left()+get_free_space_right();
+	return (get_free_space_front()+get_free_space_left()+get_free_space_right());
 }
 
 uint8_t do_next_action(void){
@@ -113,10 +113,10 @@ uint8_t do_next_action(void){
 		if(get_free_space_front()==0){
 			//open cam
 			}
-		else if (get_free_space_left==0){
+		else if (get_free_space_left()==0){
 		// turn to the left and open cam
 			}
-		else if(get_free_space_right==0){
+		else if(get_free_space_right()==0){
 		//turn to the right and open cam
 		}
 	}
