@@ -11,9 +11,9 @@
 #include <controle.h>
 
 #define WORKING_SPEED 		300
-#define K_P 		  		10
-#define K_I			  		3
-#define QUARTER_TURN  		250 // corresponds to 250 steps
+#define K_P 		  		8
+#define K_I			  		5
+#define QUARTER_TURN  		310 // corresponds to 250 steps
 #define SMALL_STEP_FORWARD	350 // about 4 cm
 
 static THD_WORKING_AREA(waPiRegulator, 256);
@@ -24,65 +24,132 @@ static THD_FUNCTION(PiRegulator, arg) {
 	systime_t time;
 	int32_t pos_left_motor=0;
 	int32_t pos_right_motor=0;
+	uint8_t done=0;
 
 
 	while(1){
 		time = chVTGetSystemTime();
-
+		follow_wall(SENSORRIGHT);
 		// if one direction possible, go in that direction while following the right wall
 		if(get_possible_directions()==1){
 			if(get_direction_changed()==0){
 				follow_wall(SENSORRIGHT);
+				//chprintf((BaseSequentialStream *) &SDU1, "dans follow right wall avec ref = %d\n",get_reference_right());
+
 			}
 			else{
-				pos_left_motor=left_motor_get_pos();
-				pos_right_motor=right_motor_get_pos();
+				//reset motor position
+				right_motor_set_pos(0);
+				left_motor_set_pos(0);
+
 				if(get_free_space_left()==1){
 					// turn 90° counterclockwise
-					while(left_motor_get_pos()!=pos_left_motor-QUARTER_TURN && right_motor_get_pos()!=pos_right_motor+QUARTER_TURN){
-						left_motor_set_speed(-WORKING_SPEED);
-						right_motor_set_speed(WORKING_SPEED);
+
+
+					left_motor_set_speed(-WORKING_SPEED); //on peut initialiser la vitesse avant le while
+					right_motor_set_speed(WORKING_SPEED);
+					while((left_motor_get_pos()>= -QUARTER_TURN || right_motor_get_pos()<=QUARTER_TURN) && done!=2){
+						if(right_motor_get_pos()==(QUARTER_TURN)){
+							right_motor_set_speed(0);
+							done++;
+						}
+
+						if(left_motor_get_pos()==-QUARTER_TURN){
+							left_motor_set_speed(0);
+							done++;
+						}
+
+						chprintf((BaseSequentialStream *) &SDU1, " dans ccw position moteur droit =%d \n",right_motor_get_pos());
+
 					}
-				}
+					done=0;
+				} //PROBLEME AVEC CONDITIONS DANS WHILE AVEC MOTOR_GET_POS--> donne la position absolue (positif et negatif)!!!!!!
 				else if(get_free_space_right()==1){
 					//turn 90° clockwise
-					while(left_motor_get_pos()!=pos_left_motor+QUARTER_TURN && right_motor_get_pos()!=pos_right_motor-QUARTER_TURN){
-						left_motor_set_speed(WORKING_SPEED);
-						right_motor_set_speed(-WORKING_SPEED);
-					}
-				}
-				pos_left_motor=left_motor_get_pos();
-				pos_right_motor=right_motor_get_pos();
-				// move forward
-				while(left_motor_get_pos()!=pos_left_motor+SMALL_STEP_FORWARD && right_motor_get_pos()!=pos_right_motor+SMALL_STEP_FORWARD){
+
 					left_motor_set_speed(WORKING_SPEED);
-					right_motor_set_speed(WORKING_SPEED);
+					right_motor_set_speed(-WORKING_SPEED);
+
+					while((left_motor_get_pos()<= QUARTER_TURN || right_motor_get_pos()>= -QUARTER_TURN)&&done!=2){
+						if(right_motor_get_pos()==(-QUARTER_TURN)){
+							right_motor_set_speed(0);
+							done++;
+						}
+
+						if(left_motor_get_pos()==QUARTER_TURN){
+							left_motor_set_speed(0);
+							done++;
+						}
+
+						chprintf((BaseSequentialStream *) &SDU1, " dans cw position moteur droit =%d \n",right_motor_get_pos());
+
+					}
+					done=0;
+				}
+				right_motor_set_pos(0);
+				left_motor_set_pos(0);
+				// move forward
+				left_motor_set_speed(WORKING_SPEED);
+				right_motor_set_speed(WORKING_SPEED);
+				while(left_motor_get_pos()<=SMALL_STEP_FORWARD && right_motor_get_pos()<=SMALL_STEP_FORWARD){
+					if(left_motor_get_pos()==SMALL_STEP_FORWARD)
+						left_motor_set_speed(0);
+					if(right_motor_get_pos()==SMALL_STEP_FORWARD)
+						right_motor_set_speed(0);
 				}
 				//redo reference
-				do_new_reference();
+				//do_new_reference();
 			}
 		}
 		else if (get_possible_directions()==2){
-			pos_left_motor=left_motor_get_pos();
-			pos_right_motor=right_motor_get_pos();
-			switch(get_wall_position()){
+			//reset motor psoition
+			right_motor_set_pos(0);
+			left_motor_set_pos(0);
+			switch(get_wall_position()){ //probleme dans case left --> on reste bloqué dedans
 			case FRONT:
 				//open camera
 				break;
 			case LEFT:{
 				// turn towards the wall and open camera
-				while(left_motor_get_pos()!=pos_left_motor-QUARTER_TURN && right_motor_get_pos()!=pos_right_motor+QUARTER_TURN){
-					left_motor_set_speed(-WORKING_SPEED);
-					right_motor_set_speed(WORKING_SPEED);
+				left_motor_set_speed(-WORKING_SPEED);
+				right_motor_set_speed(WORKING_SPEED);
+				while((left_motor_get_pos()>= -QUARTER_TURN || right_motor_get_pos() <= QUARTER_TURN)&&done!=2){
+					if(right_motor_get_pos()==QUARTER_TURN){
+						right_motor_set_speed(0);
+						done++;
+					}
+
+					if(left_motor_get_pos()==-QUARTER_TURN){
+						left_motor_set_speed(0);
+						done++;
+					}
+
+					chprintf((BaseSequentialStream *) &SDU1, " dans case LEFT position moteur droit =%d \n",right_motor_get_pos());
+
 				}
+				done=0;
 			}
 			break;
 			case RIGHT:{
 				// turn towards the wall and open camera
-				while(left_motor_get_pos()!=pos_left_motor+QUARTER_TURN && right_motor_get_pos()!=pos_right_motor-QUARTER_TURN){
-					left_motor_set_speed(WORKING_SPEED);
-					right_motor_set_speed(-WORKING_SPEED);
+				left_motor_set_speed(WORKING_SPEED);
+				right_motor_set_speed(-WORKING_SPEED);
+				while((left_motor_get_pos() <= QUARTER_TURN || right_motor_get_pos() >= -QUARTER_TURN)&&done!=2){
+					if(right_motor_get_pos()==-QUARTER_TURN){
+						right_motor_set_speed(0);
+						done++;
+					}
+
+					if(left_motor_get_pos()==QUARTER_TURN){
+						left_motor_set_speed(0);
+						done++;
+					}
+
+					chprintf((BaseSequentialStream *) &SDU1, " dans case RIGHT position moteur droit =%d \n",right_motor_get_pos());
+
 				}
+				done=0;
+
 			}
 			break;
 			}

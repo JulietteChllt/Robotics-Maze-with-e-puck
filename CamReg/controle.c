@@ -43,6 +43,10 @@ static THD_FUNCTION(Controle, arg){
 
 		if(get_possible_directions()==1 && (new_front!=prev_front || new_right!= prev_right || new_left!=prev_left)){
 			available_dir_changed = 1;
+			//update prev_front/right/left
+			prev_front = new_front;
+			prev_right = new_right;
+			prev_left = new_left; //verifier qu'on n'ecrase pas les anciennes valeurs de maniere incorrecte
 		}
 		else{
 			available_dir_changed =0;
@@ -52,8 +56,11 @@ static THD_FUNCTION(Controle, arg){
 			do_new_reference();
 			new_ref_right=variable_reference_right;
 			new_ref_left=variable_reference_left;
-			if((new_ref_right>= STABILITY_THRESHOLD && abs(new_ref_right-old_ref_right)<STABILITY_THRESHOLD) ||(new_ref_left>= STABILITY_THRESHOLD && abs(new_ref_left-old_ref_left)<STABILITY_THRESHOLD))
+			if((new_ref_right> STABILITY_THRESHOLD && abs(new_ref_right-old_ref_right)<STABILITY_THRESHOLD)){ //j'ai enleve la conditon sur la gauche pour l instant
 				did_ref=1;
+				//chprintf((BaseSequentialStream *) &SDU1, "nouvelle ref droite = %d", new_ref_right);
+			}
+
 			else {
 				old_ref_right=new_ref_right;
 				old_ref_left=new_ref_left;
