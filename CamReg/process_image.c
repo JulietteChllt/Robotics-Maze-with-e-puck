@@ -8,15 +8,20 @@
 #include <camera/po8030.h>
 
 #include <process_image.h>
-#define MASK_RED	7
-#define MASK_BLUE	0xE0
-#define THRESHOLD	30
-#define THRESHOLD_BLACK 25
-#define MIN_LINE_WIDTH	40
-#define PXTOCM 			1570.0f
-#define MAX_DISTANCE 	25.0f
-#define WIDTH_SLOPE		57
-#define GOAL_DISTANCE 	10.0f
+#define MASK_RED			7
+#define MASK_BLUE			0xE0
+#define NB_BIT_BLUE_RED 	5
+#define HALF_NB_BIT_GREEN	6
+#define CODE_BLUE			0
+#define CODE_GREEN			1
+#define CODE_RED			2
+#define THRESHOLD			30
+#define THRESHOLD_BLACK 	25
+#define MIN_LINE_WIDTH		40
+#define PXTOCM 				1570.0f
+#define MAX_DISTANCE 		25.0f
+#define WIDTH_SLOPE			57
+#define GOAL_DISTANCE 		10.0f
 
 
 
@@ -32,9 +37,9 @@ static BSEMAPHORE_DECL(image_ready_sem, TRUE);
 static THD_WORKING_AREA(waCaptureImage, 256);
 static THD_FUNCTION(CaptureImage, arg) {
 
-    chRegSetThreadName(__FUNCTION__);
-    (void)arg;
-    //systime_t time;
+	chRegSetThreadName(__FUNCTION__);
+	(void)arg;
+	//systime_t time;
 
 	//Takes pixels 0 to IMAGE_BUFFER_SIZE of the line 10 + 11 (minimum 2 lines because reasons)
 	po8030_advanced_config(FORMAT_RGB565, 0, 10, IMAGE_BUFFER_SIZE, 2, SUBSAMPLING_X1, SUBSAMPLING_X1);
@@ -42,9 +47,9 @@ static THD_FUNCTION(CaptureImage, arg) {
 	dcmi_set_capture_mode(CAPTURE_ONE_SHOT);
 	dcmi_prepare();
 
-    while(1){
-    	//AJOUTER UN SEMAPHORE QUI INDIQUE QUAND PRENDRE UNE IMAGE!!!!!!!!
-        //starts a capture
+	while(1){
+		//AJOUTER UN SEMAPHORE QUI INDIQUE QUAND PRENDRE UNE IMAGE!!!!!!!!
+		//starts a capture
 		dcmi_capture_start();
 		//time=chVTGetSystemTime();
 		//waits for the capture to be done
@@ -54,50 +59,92 @@ static THD_FUNCTION(CaptureImage, arg) {
 		//time=chVTGetSystemTime() - time;
 		//chprintf((BaseSequentialStream *) &SDU1, "time = %d \n",time); //regarder sur COM9
 
-    }
+	}
 }
 
 
 static THD_WORKING_AREA(waProcessImage, 1024);
 static THD_FUNCTION(ProcessImage, arg) {
 
-    chRegSetThreadName(__FUNCTION__);
-    (void)arg;
+	chRegSetThreadName(__FUNCTION__);
+	(void)arg;
 
 	uint8_t *img_buff_ptr;
-	uint8_t image_left[IMAGE_BUFFER_SIZE] = {0};
-	uint8_t image_right[IMAGE_BUFFER_SIZE] = {0};
 	uint8_t nbr_image=0;
-	uint16_t i =0;
+	uint8_t image_blue[IMAGE_BUFFER_SIZE] = {0};
+	uint8_t image_green[IMAGE_BUFFER_SIZE] = {0};
+	uint8_t image_red[IMAGE_BUFFER_SIZE] = {0};
 
-    while(1){
-    	//waits until an image has been captured
-        chBSemWait(&image_ready_sem);
+	//uint16_t i =0;
+
+	while(1){
+		//waits until an image has been captured
+		chBSemWait(&image_ready_sem);
 		//gets the pointer to the array filled with the last image in RGB565    
 		img_buff_ptr = dcmi_get_last_image_ptr();
 
-		/*
-		*	To complete
-		*/
-
-		for(i=0;i<IMAGE_BUFFER_SIZE; i++)
+		/*for(i=0;i<IMAGE_BUFFER_SIZE; i++)
 		{
 			image_left[i]=img_buff_ptr[2*i] & ~MASK_RED;
 			image_right[i]=img_buff_ptr[2*i+1] & ~MASK_BLUE;
-		}
+		}*/
 
 		/*nbr_image=(nbr_image+1)%2;
 
 		if(!nbr_image)
 			SendUint8ToComputer(image, IMAGE_BUFFER_SIZE);
-			*/
+		 */
 
 		//distance_cm = PXTOCM/extract_line_width(image);
 
 		//chprintf((BaseSequentialStream *) &SDU1, "width black line = %ld \n distance cm = %f",extract_line_width(image),distance_cm);
 
-    }
+	}
 }
+
+uint8_t* get_red(uint8_t *image_red, uint8_t *img_buff_ptr){
+	for(uint16_t i =0; i<IMAGE_BUFFER_SIZE; i++){
+		//extract the 5 MSB of RGB value
+		image_red[i]=(uint8_t)((img_buff_ptr[2*i]& ~MASK_RED)>>HALF_NB_BIT_GREEN);
+	}
+	return image_red;
+}
+
+uint8_t* get_blue(uint8_t *image_blue, uint8_t *img_buff_ptr){
+	for(uint16_t i =0; i<IMAGE_BUFFER_SIZE; i++){
+		//extract the 5 LSB of RGB value
+		image_blue[i]=(uint8_t)(img_buff_ptr[2*i+1]& ~MASK_BLUE);
+	}
+	return image_blue;
+}
+
+uint8_t* get_green(uint8_t *image_green, uint8_t *img_buff_ptr){
+	for(uint16_t i =0; i<IMAGE_BUFFER_SIZE; i++){
+		//extract the 6 bits corresponding to the green color in the RGB value
+		image_green[i]=(uint8_t)(((img_buff_ptr[2*i+1]& MASK_BLUE)>>5)+((img_buff_ptr[2*i]&MASK_RED)<<3));
+	}
+	return image_green;
+}
+
+// maybe putting a threshold would be better
+uint8_t get_color(uint8_t avg_blue, uint8_t avg_green, uint8_t avg_red){
+	if(avg_blue>avg_green && avg_blue> avg_red)
+		return CODE_BLUE;
+	else if (avg_green>avg_blue && avg_green>avg_red)
+		return CODE_GREEN;
+	else
+		return CODE_RED;
+}
+
+uint8_t avg_color(uint8_t* image_color){
+	uint32_t avg_pixel = 0;
+	for(uint16_t i = 0 ; i < IMAGE_BUFFER_SIZE ; i++){
+		avg_pixel += image_color[i];
+	}
+	return (uint8_t)(avg_pixel / IMAGE_BUFFER_SIZE);
+
+}
+
 
 float get_distance_cm(void){
 	return distance_cm;
@@ -200,37 +247,37 @@ uint16_t extract_line_width(uint8_t *buffer){
 		while(stop == 0 && i < (IMAGE_BUFFER_SIZE - WIDTH_SLOPE))
 		{
 			//the slope must at least be WIDTH_SLOPE wide and is compared
-		    //to the mean of the image
-		    if(buffer[i] > mean && buffer[i+WIDTH_SLOPE] < mean)
-		    {
-		        begin = i;
-		        stop = 1;
-		    }
-		    i++;
+			//to the mean of the image
+			if(buffer[i] > mean && buffer[i+WIDTH_SLOPE] < mean)
+			{
+				begin = i;
+				stop = 1;
+			}
+			i++;
 		}
 		//if a begin was found, search for an end
 		if (i < (IMAGE_BUFFER_SIZE - WIDTH_SLOPE) && begin)
 		{
-		    stop = 0;
+			stop = 0;
 
-		    while(stop == 0 && i < IMAGE_BUFFER_SIZE)
-		    {
-		        if(buffer[i] > mean && buffer[i-WIDTH_SLOPE] < mean)
-		        {
-		            end = i;
-		            stop = 1;
-		        }
-		        i++;
-		    }
-		    //if an end was not found
-		    if (i > IMAGE_BUFFER_SIZE || !end)
-		    {
-		        line_not_found = 1;
-		    }
+			while(stop == 0 && i < IMAGE_BUFFER_SIZE)
+			{
+				if(buffer[i] > mean && buffer[i-WIDTH_SLOPE] < mean)
+				{
+					end = i;
+					stop = 1;
+				}
+				i++;
+			}
+			//if an end was not found
+			if (i > IMAGE_BUFFER_SIZE || !end)
+			{
+				line_not_found = 1;
+			}
 		}
 		else//if no begin was found
 		{
-		    line_not_found = 1;
+			line_not_found = 1;
 		}
 
 		//if a line too small has been detected, continues the search
