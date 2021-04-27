@@ -22,6 +22,7 @@ static THD_FUNCTION(PiRegulator, arg) {
 	chRegSetThreadName(__FUNCTION__);
 	(void)arg;
 	systime_t time;
+
 	int32_t pos_left_motor=0;
 	int32_t pos_right_motor=0;
 
@@ -39,6 +40,7 @@ static THD_FUNCTION(PiRegulator, arg) {
 				pos_right_motor=right_motor_get_pos();
 				if(get_free_space_left()==1){
 					// turn 90° counterclockwise
+					// A REVOIR POSE PEUT ETRE PROBLEME
 					while(left_motor_get_pos()!=pos_left_motor-QUARTER_TURN && right_motor_get_pos()!=pos_right_motor+QUARTER_TURN){
 						left_motor_set_speed(-WORKING_SPEED);
 						right_motor_set_speed(WORKING_SPEED);
