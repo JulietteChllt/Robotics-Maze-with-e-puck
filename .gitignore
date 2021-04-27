@@ -58,3 +58,4 @@ dkms.conf
 CamReg/TP4_CamReg.launch
 CamReg/.project
 CamReg/.cproject
+git config advice.addIgnoredFile false
