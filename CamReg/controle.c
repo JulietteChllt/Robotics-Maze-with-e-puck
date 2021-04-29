@@ -81,6 +81,10 @@ void wait_semaphore_ready(void){
 	chBSemWait(&open_camera_sem);
 }
 
+void semaphore_ready(void){
+	chBSemSignal(&open_camera_sem);
+}
+
 /*int calibrate_ambient_light(uint8_t sensor1){ //penser a utiliser get_prox pour la calibration et eliminer lumiere ambiante
 	int calibration_factor=0;
 	uint16_t avg_light=0;

@@ -21,6 +21,7 @@
 
 void controle_start(void);
 void wait_semaphore_ready(void);
+void semaphore_ready(void);
 //int calibrate_ambient_light(uint8_t sensor1);
 uint8_t get_free_space(uint8_t sensor1);
 uint8_t get_free_space_front(void);

@@ -49,6 +49,7 @@ static THD_FUNCTION(CaptureImage, arg) {
 
 	while(1){
 		//AJOUTER UN SEMAPHORE QUI INDIQUE QUAND PRENDRE UNE IMAGE!!!!!!!!
+		wait_semaphore_ready();
 		//starts a capture
 		dcmi_capture_start();
 		//time=chVTGetSystemTime();
@@ -74,6 +75,7 @@ static THD_FUNCTION(ProcessImage, arg) {
 	uint8_t image_blue[IMAGE_BUFFER_SIZE] = {0};
 	uint8_t image_green[IMAGE_BUFFER_SIZE] = {0};
 	uint8_t image_red[IMAGE_BUFFER_SIZE] = {0};
+	uint8_t color=0;
 
 	//uint16_t i =0;
 
@@ -83,21 +85,18 @@ static THD_FUNCTION(ProcessImage, arg) {
 		//gets the pointer to the array filled with the last image in RGB565    
 		img_buff_ptr = dcmi_get_last_image_ptr();
 
-		/*for(i=0;i<IMAGE_BUFFER_SIZE; i++)
-		{
-			image_left[i]=img_buff_ptr[2*i] & ~MASK_RED;
-			image_right[i]=img_buff_ptr[2*i+1] & ~MASK_BLUE;
-		}*/
-
-		/*nbr_image=(nbr_image+1)%2;
-
-		if(!nbr_image)
-			SendUint8ToComputer(image, IMAGE_BUFFER_SIZE);
-		 */
-
-		//distance_cm = PXTOCM/extract_line_width(image);
-
-		//chprintf((BaseSequentialStream *) &SDU1, "width black line = %ld \n distance cm = %f",extract_line_width(image),distance_cm);
+		color = get_color(avg_color(get_blue(image_blue, img_buff_ptr)),avg_color(get_green(image_green, img_buff_ptr)),avg_color(get_red(image_red, img_buff_ptr)));
+		switch(color){
+		case CODE_BLUE:
+			//turn right
+			break;
+		case CODE_RED:
+			//turn left
+			break;
+		case CODE_GREEN:
+			//light up leds
+			break;
+		}
 
 	}
 }
