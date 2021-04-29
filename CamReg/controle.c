@@ -69,7 +69,7 @@ static THD_FUNCTION(Controle, arg){
 
 
 		//chBSemSignal(&open_camera_sem); //a appeller quand on a detecté un croisement
-		chThdSleepMilliseconds(5); //ou utiliser chThdSleepUntilWindowed(time, time + MS2ST(10));
+		chThdSleepMilliseconds(2000); //ou utiliser chThdSleepUntilWindowed(time, time + MS2ST(10));
 	}
 }
 
@@ -96,11 +96,11 @@ void wait_semaphore_ready(void){
 }*/
 
 uint8_t get_free_space(uint8_t sensor1){
-	return (get_calibrated_prox(sensor1)>THRESHOLD_CLOSE_OBSTACLE)? 1: 0;
+	return (get_calibrated_prox(sensor1)>THRESHOLD_CLOSE_OBSTACLE)? 0: 1;
 }
 
 uint8_t get_free_space_front(void){
-	return ((get_calibrated_prox(SENSORFRONT1)+get_calibrated_prox(SENSORFRONT2))/2>THRESHOLD_CLOSE_OBSTACLE)? 1: 0;;
+	return ((get_calibrated_prox(SENSORFRONT1)+get_calibrated_prox(SENSORFRONT2))/2>THRESHOLD_CLOSE_OBSTACLE)? 0: 1;
 }
 
 uint8_t get_free_space_left(void){

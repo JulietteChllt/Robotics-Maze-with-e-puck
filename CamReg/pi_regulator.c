@@ -24,16 +24,18 @@ static THD_FUNCTION(PiRegulator, arg) {
 	systime_t time;
 	int32_t pos_left_motor=0;
 	int32_t pos_right_motor=0;
-	uint8_t done=0;
+	uint8_t done_left=0, done_right=0;
 
 
 	while(1){
 		time = chVTGetSystemTime();
-		follow_wall(SENSORRIGHT);
 		// if one direction possible, go in that direction while following the right wall
+		chprintf((BaseSequentialStream *) &SDU1, " directions possibles =%d direction changed = %d\n",get_possible_directions(),get_direction_changed());
+
 		if(get_possible_directions()==1){
+			follow_wall(SENSORRIGHT);
 			if(get_direction_changed()==0){
-				follow_wall(SENSORRIGHT);
+
 				//chprintf((BaseSequentialStream *) &SDU1, "dans follow right wall avec ref = %d\n",get_reference_right());
 
 			}
@@ -48,55 +50,63 @@ static THD_FUNCTION(PiRegulator, arg) {
 
 					left_motor_set_speed(-WORKING_SPEED); //on peut initialiser la vitesse avant le while
 					right_motor_set_speed(WORKING_SPEED);
-					while((left_motor_get_pos()>= -QUARTER_TURN || right_motor_get_pos()<=QUARTER_TURN) && done!=2){
-						if(right_motor_get_pos()==(QUARTER_TURN)){
+					while(done_left+done_right!=2){
+						if(right_motor_get_pos()>=(QUARTER_TURN)){
 							right_motor_set_speed(0);
-							done++;
+							done_right=1;
 						}
 
-						if(left_motor_get_pos()==-QUARTER_TURN){
+						if(left_motor_get_pos()<=-QUARTER_TURN){
 							left_motor_set_speed(0);
-							done++;
+							done_left=1;
 						}
 
-						chprintf((BaseSequentialStream *) &SDU1, " dans ccw position moteur droit =%d \n",right_motor_get_pos());
+						//chprintf((BaseSequentialStream *) &SDU1, " dans ccw position moteur droit =%d \n",right_motor_get_pos());
 
 					}
-					done=0;
-				} //PROBLEME AVEC CONDITIONS DANS WHILE AVEC MOTOR_GET_POS--> donne la position absolue (positif et negatif)!!!!!!
+					done_left=0,done_right=0;
+				}
+
 				else if(get_free_space_right()==1){
 					//turn 90° clockwise
 
 					left_motor_set_speed(WORKING_SPEED);
 					right_motor_set_speed(-WORKING_SPEED);
 
-					while((left_motor_get_pos()<= QUARTER_TURN || right_motor_get_pos()>= -QUARTER_TURN)&&done!=2){
-						if(right_motor_get_pos()==(-QUARTER_TURN)){
+					while(done_left+done_right!=2){
+						if(right_motor_get_pos()<=(-QUARTER_TURN)){
 							right_motor_set_speed(0);
-							done++;
+							done_right=1;
 						}
 
-						if(left_motor_get_pos()==QUARTER_TURN){
+						if(left_motor_get_pos()>=QUARTER_TURN){
 							left_motor_set_speed(0);
-							done++;
+							done_left=1;
 						}
 
-						chprintf((BaseSequentialStream *) &SDU1, " dans cw position moteur droit =%d \n",right_motor_get_pos());
+						//chprintf((BaseSequentialStream *) &SDU1, " dans cw position moteur droit =%d \n",right_motor_get_pos());
 
 					}
-					done=0;
+					done_right=0, done_left=0;
 				}
 				right_motor_set_pos(0);
 				left_motor_set_pos(0);
 				// move forward
 				left_motor_set_speed(WORKING_SPEED);
 				right_motor_set_speed(WORKING_SPEED);
-				while(left_motor_get_pos()<=SMALL_STEP_FORWARD && right_motor_get_pos()<=SMALL_STEP_FORWARD){
-					if(left_motor_get_pos()==SMALL_STEP_FORWARD)
+				while(done_left+done_right!=2){
+					if(left_motor_get_pos()>=SMALL_STEP_FORWARD){
 						left_motor_set_speed(0);
-					if(right_motor_get_pos()==SMALL_STEP_FORWARD)
+						done_left=1;
+					}
+
+					if(right_motor_get_pos()>=SMALL_STEP_FORWARD){
 						right_motor_set_speed(0);
+						done_right=1;
+					}
+					//chprintf((BaseSequentialStream *) &SDU1, "dans while avec done = %d", done_right+done_left);
 				}
+				done_right=0, done_left=0;
 				//redo reference
 				//do_new_reference();
 			}
@@ -107,66 +117,56 @@ static THD_FUNCTION(PiRegulator, arg) {
 			left_motor_set_pos(0);
 			switch(get_wall_position()){ //probleme dans case left --> on reste bloqué dedans
 			case FRONT:
-				//open camera
+				//open camerachprintf((BaseSequentialStream *) &SDU1, " dans case LEFT position moteur droit =%d \n",right_motor_get_pos());
+
 				break;
 			case LEFT:{
 				// turn towards the wall and open camera
 				left_motor_set_speed(-WORKING_SPEED);
 				right_motor_set_speed(WORKING_SPEED);
-				while((left_motor_get_pos()>= -QUARTER_TURN || right_motor_get_pos() <= QUARTER_TURN)&&done!=2){
-					if(right_motor_get_pos()==QUARTER_TURN){
+				while(done_left+done_right!=2){
+					if(right_motor_get_pos()>=QUARTER_TURN){
 						right_motor_set_speed(0);
-						done++;
+						done_right=1;
 					}
 
-					if(left_motor_get_pos()==-QUARTER_TURN){
+					if(left_motor_get_pos()<=-QUARTER_TURN){
 						left_motor_set_speed(0);
-						done++;
+						done_left=1;
 					}
 
-					chprintf((BaseSequentialStream *) &SDU1, " dans case LEFT position moteur droit =%d \n",right_motor_get_pos());
+					//chprintf((BaseSequentialStream *) &SDU1, " dans case LEFT position moteur droit =%d \n",right_motor_get_pos());
 
 				}
-				done=0;
+				done_right=0, done_left=0;
 			}
 			break;
 			case RIGHT:{
 				// turn towards the wall and open camera
 				left_motor_set_speed(WORKING_SPEED);
 				right_motor_set_speed(-WORKING_SPEED);
-				while((left_motor_get_pos() <= QUARTER_TURN || right_motor_get_pos() >= -QUARTER_TURN)&&done!=2){
-					if(right_motor_get_pos()==-QUARTER_TURN){
+				while(done_left+done_right!=2){
+					if(right_motor_get_pos()<=-QUARTER_TURN){
 						right_motor_set_speed(0);
-						done++;
+						done_right=1;
 					}
 
-					if(left_motor_get_pos()==QUARTER_TURN){
+					if(left_motor_get_pos()>=QUARTER_TURN){
 						left_motor_set_speed(0);
-						done++;
+						done_left=1;
 					}
 
-					chprintf((BaseSequentialStream *) &SDU1, " dans case RIGHT position moteur droit =%d \n",right_motor_get_pos());
+					//chprintf((BaseSequentialStream *) &SDU1, " dans case RIGHT position moteur droit =%d \n",right_motor_get_pos());
 
 				}
-				done=0;
+				done_right=0, done_left=0;
 
 			}
 			break;
 			}
 		}
 
-		//follow_wall(SENSORLEFT);
 
-		/*switch(get_possible_directions()){
-		case 0:
-			break;
-		case 1:
-
-			break;
-		case 2:
-			break;
-		//default :
-		}*/
 
 		//100Hz
 		chThdSleepUntilWindowed(time, time + MS2ST(10));
@@ -192,7 +192,7 @@ void follow_wall(uint8_t sensor){
 			left_motor_set_speed(WORKING_SPEED);
 		}
 	}
-	else if(sensor==SENSORLEFT){
+	/*else if(sensor==SENSORLEFT){
 		err = (int16_t) get_calibrated_prox(sensor) - get_reference_left();
 		command = abs(K_P*err + K_I*sum_err); //ajouter K_I
 		if(err<0){ //on est trop eloigné du mur de gauche --> ajouter un peu de vitesse au moteur de droite
@@ -203,7 +203,7 @@ void follow_wall(uint8_t sensor){
 			right_motor_set_speed(WORKING_SPEED);
 			left_motor_set_speed(WORKING_SPEED + command);
 		}
-	}
+	}*/
 	//if(i==10)
 	//chprintf((BaseSequentialStream *) &SDU1, "valeur senseur = %d, ref= %d err= %d. sum_err = %d, commande = %d\n", get_calibrated_prox(SENSORLEFT),get_reference(), err, sum_err, command);
 
