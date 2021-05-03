@@ -86,6 +86,9 @@ static THD_FUNCTION(ProcessImage, arg) {
 		img_buff_ptr = dcmi_get_last_image_ptr();
 
 		color = get_color(avg_color(get_blue(image_blue, img_buff_ptr)),avg_color(get_green(image_green, img_buff_ptr)),avg_color(get_red(image_red, img_buff_ptr)));
+
+		//chprintf((BaseSequentialStream *) &SDU1,"dans process image color = %d", color);
+
 		switch(color){
 		case CODE_BLUE:
 			//turn right
