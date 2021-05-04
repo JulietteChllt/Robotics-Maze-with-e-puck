@@ -5,5 +5,8 @@
 //start the PI regulator thread
 void pi_regulator_start(void);
 void follow_wall(uint8_t sensor);
+void turn_counterclockwise(void);
+void turn_clockwise(void);
+void move_forward_smallstep(void);
 
 #endif /* PI_REGULATOR_H */

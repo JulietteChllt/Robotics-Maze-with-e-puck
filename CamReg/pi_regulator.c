@@ -24,7 +24,7 @@ static THD_FUNCTION(PiRegulator, arg) {
 	systime_t time;
 	int32_t pos_left_motor=0;
 	int32_t pos_right_motor=0;
-	uint8_t done_left=0, done_right=0;
+	uint8_t wall_position=0;
 
 
 	while(1){
@@ -47,66 +47,19 @@ static THD_FUNCTION(PiRegulator, arg) {
 				if(get_free_space_left()==1){
 					// turn 90° counterclockwise
 
-
-					left_motor_set_speed(-WORKING_SPEED); //on peut initialiser la vitesse avant le while
-					right_motor_set_speed(WORKING_SPEED);
-					while(done_left+done_right!=2){
-						if(right_motor_get_pos()>=(QUARTER_TURN)){
-							right_motor_set_speed(0);
-							done_right=1;
-						}
-
-						if(left_motor_get_pos()<=-QUARTER_TURN){
-							left_motor_set_speed(0);
-							done_left=1;
-						}
-
-						//chprintf((BaseSequentialStream *) &SDU1, " dans ccw position moteur droit =%d \n",right_motor_get_pos());
-
-					}
-					done_left=0,done_right=0;
+					turn_counterclockwise();
 				}
 
 				else if(get_free_space_right()==1){
 					//turn 90° clockwise
 
-					left_motor_set_speed(WORKING_SPEED);
-					right_motor_set_speed(-WORKING_SPEED);
-
-					while(done_left+done_right!=2){
-						if(right_motor_get_pos()<=(-QUARTER_TURN)){
-							right_motor_set_speed(0);
-							done_right=1;
-						}
-
-						if(left_motor_get_pos()>=QUARTER_TURN){
-							left_motor_set_speed(0);
-							done_left=1;
-						}
-
-						//chprintf((BaseSequentialStream *) &SDU1, " dans cw position moteur droit =%d \n",right_motor_get_pos());
-
-					}
-					done_right=0, done_left=0;
+					turn_clockwise();
 				}
-				right_motor_set_pos(0);
-				left_motor_set_pos(0);
-				// move forward
-				left_motor_set_speed(WORKING_SPEED);
-				right_motor_set_speed(WORKING_SPEED);
-				while(done_left+done_right!=2){
-					if(left_motor_get_pos()>=SMALL_STEP_FORWARD){
-						left_motor_set_speed(0);
-						done_left=1;
-					}
 
-					if(right_motor_get_pos()>=SMALL_STEP_FORWARD){
-						right_motor_set_speed(0);
-						done_right=1;
-					}
-					//chprintf((BaseSequentialStream *) &SDU1, "dans while avec done = %d", done_right+done_left);
-				}
-				done_right=0, done_left=0;
+				//small step forward
+				move_forward_smallstep();
+
+
 				//redo reference
 				//do_new_reference();
 			}
@@ -115,58 +68,83 @@ static THD_FUNCTION(PiRegulator, arg) {
 			//reset motor psoition
 			right_motor_set_pos(0);
 			left_motor_set_pos(0);
-			switch(get_wall_position()){ //probleme dans case left --> on reste bloqué dedans
+			wall_position = get_wall_position();
+			switch(wall_position){ //probleme dans case left --> on reste bloqué dedans
 			case FRONT:
-				//open camerachprintf((BaseSequentialStream *) &SDU1, " dans case LEFT position moteur droit =%d \n",right_motor_get_pos());
+				//open camera
 
 				break;
 			case LEFT:{
 				// turn towards the wall and open camera
-				left_motor_set_speed(-WORKING_SPEED);
-				right_motor_set_speed(WORKING_SPEED);
-				while(done_left+done_right!=2){
-					if(right_motor_get_pos()>=QUARTER_TURN){
-						right_motor_set_speed(0);
-						done_right=1;
-					}
-
-					if(left_motor_get_pos()<=-QUARTER_TURN){
-						left_motor_set_speed(0);
-						done_left=1;
-					}
-
-					//chprintf((BaseSequentialStream *) &SDU1, " dans case LEFT position moteur droit =%d \n",right_motor_get_pos());
-
-				}
-				done_right=0, done_left=0;
+				turn_counterclockwise();
 			}
 			break;
 			case RIGHT:{
 				// turn towards the wall and open camera
-				left_motor_set_speed(WORKING_SPEED);
-				right_motor_set_speed(-WORKING_SPEED);
-				while(done_left+done_right!=2){
-					if(right_motor_get_pos()<=-QUARTER_TURN){
-						right_motor_set_speed(0);
-						done_right=1;
-					}
-
-					if(left_motor_get_pos()>=QUARTER_TURN){
-						left_motor_set_speed(0);
-						done_left=1;
-					}
-
-					//chprintf((BaseSequentialStream *) &SDU1, " dans case RIGHT position moteur droit =%d \n",right_motor_get_pos());
-
-				}
-				done_right=0, done_left=0;
+				turn_clockwise();
 
 			}
 			break;
 			}
-			//semaphore_ready();
-		}
+			semaphore_ready();
 
+			switch(get_color()){
+			case CODE_BLUE:{
+				//TURN RIGHT
+				//ATTENTION DES FOIS IL FAUDRSIT TOURNER UN DEMI TOUR COMPLET
+				switch(wall_position){
+				case FRONT:{
+					turn_clockwise();
+				}
+				break;
+				case LEFT:{
+					turn_clockwise();
+					turn_clockwise();
+				}
+				break;
+				case RIGHT:{
+					turn_counterclockwise();
+				}
+				break;
+				}
+			}
+			break;
+			case CODE_RED:{
+				//TURN LEFT
+				switch(wall_position){
+				case FRONT:{
+					turn_counterclockwise();
+				}
+				break;
+				case LEFT:{
+					turn_clockwise();
+				}
+				break;
+				case RIGHT:{
+					turn_counterclockwise();
+					turn_counterclockwise();
+				}
+				break;
+				}
+			}
+<<<<<<< HEAD
+			//semaphore_ready();
+=======
+			}
+
+
+>>>>>>> balt
+		}
+		//apres avoir pris une image il faut qu'on recupere color et qu on tourne dans la direction indiquée
+		//peut etre utiliser un autre semaphore, ou autre moyen equivalent
+
+
+		else if(get_possible_directions()==0){
+			semaphore_ready();
+			if(get_color()==CODE_GREEN){
+				//turn on leds and stop motor
+			}
+		}
 
 
 		//100Hz
@@ -216,3 +194,77 @@ void follow_wall(uint8_t sensor){
 
 	//i++;
 }
+
+void turn_clockwise(void){
+
+	left_motor_set_pos(0);
+	right_motor_set_pos(0);
+
+	uint8_t done_left=0, done_right=0;
+
+	left_motor_set_speed(WORKING_SPEED);
+	right_motor_set_speed(-WORKING_SPEED);
+
+	while(done_left+done_right!=2){
+		if(right_motor_get_pos()<=(-QUARTER_TURN)){
+			right_motor_set_speed(0);
+			done_right=1;
+		}
+
+		if(left_motor_get_pos()>=QUARTER_TURN){
+			left_motor_set_speed(0);
+			done_left=1;
+		}
+	}
+	done_right=0,done_left=0;
+}
+
+void turn_counterclockwise(void){
+
+	left_motor_set_pos(0);
+	right_motor_set_pos(0);
+
+	uint8_t done_left=0, done_right=0;
+
+	left_motor_set_speed(-WORKING_SPEED);
+	right_motor_set_speed(WORKING_SPEED);
+
+	while(done_left+done_right!=2){
+		if(right_motor_get_pos()>=(QUARTER_TURN)){
+			right_motor_set_speed(0);
+			done_right=1;
+		}
+
+		if(left_motor_get_pos()<=-QUARTER_TURN){
+			left_motor_set_speed(0);
+			done_left=1;
+		}
+	}
+	done_right=0,done_left=0;
+}
+
+void move_forward_smallstep(void){
+
+	uint8_t done_left=0, done_right=0;
+
+
+	right_motor_set_pos(0);
+	left_motor_set_pos(0);
+	// move forward
+	left_motor_set_speed(WORKING_SPEED);
+	right_motor_set_speed(WORKING_SPEED);
+	while(done_left+done_right!=2){
+		if(left_motor_get_pos()>=SMALL_STEP_FORWARD){
+			left_motor_set_speed(0);
+			done_left=1;
+		}
+
+		if(right_motor_get_pos()>=SMALL_STEP_FORWARD){
+			right_motor_set_speed(0);
+			done_right=1;
+		}
+		//chprintf((BaseSequentialStream *) &SDU1, "dans while avec done = %d", done_right+done_left);
+	}
+	done_right=0, done_left=0;
+}
+
