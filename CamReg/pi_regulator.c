@@ -164,6 +164,7 @@ static THD_FUNCTION(PiRegulator, arg) {
 			}
 			break;
 			}
+			semaphore_ready();
 		}
 
 
