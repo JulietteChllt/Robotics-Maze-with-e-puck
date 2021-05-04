@@ -30,7 +30,7 @@ static THD_FUNCTION(PiRegulator, arg) {
 	while(1){
 		time = chVTGetSystemTime();
 		// if one direction possible, go in that direction while following the right wall
-		chprintf((BaseSequentialStream *) &SDU1, " directions possibles =%d direction changed = %d\n",get_possible_directions(),get_direction_changed());
+		//chprintf((BaseSequentialStream *) &SDU1, " directions possibles =%d direction changed = %d\n",get_possible_directions(),get_direction_changed());
 
 		if(get_possible_directions()==1){
 			follow_wall(SENSORRIGHT);
@@ -164,7 +164,7 @@ static THD_FUNCTION(PiRegulator, arg) {
 			}
 			break;
 			}
-			semaphore_ready();
+			//semaphore_ready();
 		}
 
 

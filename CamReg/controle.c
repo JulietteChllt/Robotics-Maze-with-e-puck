@@ -68,8 +68,7 @@ static THD_FUNCTION(Controle, arg){
 		}
 
 
-		//chBSemSignal(&open_camera_sem); //a appeller quand on a detecté un croisement
-		chThdSleepMilliseconds(2000); //ou utiliser chThdSleepUntilWindowed(time, time + MS2ST(10));
+		chThdSleepMilliseconds(500); //ou utiliser chThdSleepUntilWindowed(time, time + MS2ST(10));
 	}
 }
 

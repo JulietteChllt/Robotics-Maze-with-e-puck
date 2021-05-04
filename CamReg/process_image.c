@@ -58,7 +58,7 @@ static THD_FUNCTION(CaptureImage, arg) {
 		//signals an image has been captured
 		chBSemSignal(&image_ready_sem);
 		//time=chVTGetSystemTime() - time;
-		//chprintf((BaseSequentialStream *) &SDU1, "time = %d \n",time); //regarder sur COM9
+		//chprintf((BaseSequentialStream *) &SDU1, "dans capture image"); //regarder sur COM9
 
 	}
 }
@@ -97,7 +97,6 @@ static THD_FUNCTION(ProcessImage, arg) {
 			//light up leds
 			break;
 		}
-
 	}
 }
 
