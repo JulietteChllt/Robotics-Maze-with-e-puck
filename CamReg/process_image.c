@@ -12,9 +12,9 @@
 #define MASK_BLUE			0xE0
 #define NB_BIT_BLUE_RED 	5
 #define HALF_NB_BIT_GREEN	6
-#define CODE_BLUE			0
-#define CODE_GREEN			1
-#define CODE_RED			2
+#define CODE_BLUE			1
+#define CODE_GREEN			2
+#define CODE_RED			3
 #define THRESHOLD			30
 #define THRESHOLD_BLACK 	25
 #define MIN_LINE_WIDTH		40
@@ -28,6 +28,7 @@
 
 static uint16_t line_position = IMAGE_BUFFER_SIZE/2;
 volatile static float distance_cm = 0;
+volatile static uint8_t color=0;
 
 static uint8_t direction=0; //gauche = 1 et droite = 2 pour pas avoir de probleme avec 0(?)
 
@@ -75,7 +76,7 @@ static THD_FUNCTION(ProcessImage, arg) {
 	uint8_t image_blue[IMAGE_BUFFER_SIZE] = {0};
 	uint8_t image_green[IMAGE_BUFFER_SIZE] = {0};
 	uint8_t image_red[IMAGE_BUFFER_SIZE] = {0};
-	uint8_t color=0;
+
 
 	//uint16_t i =0;
 
@@ -89,17 +90,7 @@ static THD_FUNCTION(ProcessImage, arg) {
 
 		//chprintf((BaseSequentialStream *) &SDU1,"dans process image color = %d", color);
 
-		switch(color){
-		case CODE_BLUE:
-			//turn right
-			break;
-		case CODE_RED:
-			//turn left
-			break;
-		case CODE_GREEN:
-			//light up leds
-			break;
-		}
+
 
 	}
 }
@@ -129,13 +120,17 @@ uint8_t* get_green(uint8_t *image_green, uint8_t *img_buff_ptr){
 }
 
 // maybe putting a threshold would be better
-uint8_t get_color(uint8_t avg_blue, uint8_t avg_green, uint8_t avg_red){
+uint8_t determine_color(uint8_t avg_blue, uint8_t avg_green, uint8_t avg_red){
 	if(avg_blue>avg_green && avg_blue> avg_red)
 		return CODE_BLUE;
 	else if (avg_green>avg_blue && avg_green>avg_red)
 		return CODE_GREEN;
 	else
 		return CODE_RED;
+}
+
+uint8_t get_color(void){
+	return color;
 }
 
 uint8_t avg_color(uint8_t* image_color){

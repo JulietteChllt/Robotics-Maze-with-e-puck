@@ -24,6 +24,7 @@ static THD_FUNCTION(PiRegulator, arg) {
 	systime_t time;
 	int32_t pos_left_motor=0;
 	int32_t pos_right_motor=0;
+	uint8_t wall_position=0;
 
 
 	while(1){
@@ -67,7 +68,8 @@ static THD_FUNCTION(PiRegulator, arg) {
 			//reset motor psoition
 			right_motor_set_pos(0);
 			left_motor_set_pos(0);
-			switch(get_wall_position()){ //probleme dans case left --> on reste bloqué dedans
+			wall_position = get_wall_position();
+			switch(wall_position){ //probleme dans case left --> on reste bloqué dedans
 			case FRONT:
 				//open camera
 
@@ -85,8 +87,60 @@ static THD_FUNCTION(PiRegulator, arg) {
 			break;
 			}
 			semaphore_ready();
-		}
 
+			switch(get_color()){
+			case CODE_BLUE:{
+				//TURN RIGHT
+				//ATTENTION DES FOIS IL FAUDRSIT TOURNER UN DEMI TOUR COMPLET
+				switch(wall_position){
+				case FRONT:{
+					turn_clockwise();
+				}
+				break;
+				case LEFT:{
+					turn_clockwise();
+					turn_clockwise();
+				}
+				break;
+				case RIGHT:{
+					turn_counterclockwise();
+				}
+				break;
+				}
+			}
+			break;
+			case CODE_RED:{
+				//TURN LEFT
+				switch(wall_position){
+				case FRONT:{
+					turn_counterclockwise();
+				}
+				break;
+				case LEFT:{
+					turn_clockwise();
+				}
+				break;
+				case RIGHT:{
+					turn_counterclockwise();
+					turn_counterclockwise();
+				}
+				break;
+				}
+			}
+			}
+
+
+		}
+		//apres avoir pris une image il faut qu'on recupere color et qu on tourne dans la direction indiquée
+		//peut etre utiliser un autre semaphore, ou autre moyen equivalent
+
+
+		else if(get_possible_directions()==0){
+			semaphore_ready();
+			if(get_color()==CODE_GREEN){
+				//turn on leds and stop motor
+			}
+		}
 
 
 		//100Hz
