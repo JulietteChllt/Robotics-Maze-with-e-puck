@@ -31,11 +31,12 @@ static THD_FUNCTION(PiRegulator, arg) {
 		time = chVTGetSystemTime();
 		// if one direction possible, go in that direction while following the right wall
 		//chprintf((BaseSequentialStream *) &SDU1, " directions possibles =%d direction changed = %d\n",get_possible_directions(),get_direction_changed());
-
+		//follow_wall(SENSORRIGHT);
 		if(get_possible_directions()==1){
-			follow_wall(SENSORRIGHT);
+
 			if(get_direction_changed()==0){
 
+				follow_wall(SENSORRIGHT);
 				//chprintf((BaseSequentialStream *) &SDU1, "dans follow right wall avec ref = %d\n",get_reference_right());
 
 			}
@@ -46,13 +47,13 @@ static THD_FUNCTION(PiRegulator, arg) {
 
 				if(get_free_space_left()==1){
 					// turn 90° counterclockwise
-
+					chprintf((BaseSequentialStream *) &SDU1, "dans turn ccw\n");
 					turn_counterclockwise();
 				}
 
 				else if(get_free_space_right()==1){
 					//turn 90° clockwise
-
+					chprintf((BaseSequentialStream *) &SDU1, "dans turn cw\n");
 					turn_clockwise();
 				}
 
@@ -64,23 +65,25 @@ static THD_FUNCTION(PiRegulator, arg) {
 				//do_new_reference();
 			}
 		}
-		else if (get_possible_directions()==2){
+		else if (get_possible_directions()==2 && start){
 			//reset motor psoition
 			right_motor_set_pos(0);
 			left_motor_set_pos(0);
 			wall_position = get_wall_position();
-			switch(wall_position){ //probleme dans case left --> on reste bloqué dedans
+			switch(wall_position){
 			case FRONT:
 				//open camera
-
+				chprintf((BaseSequentialStream *) &SDU1, "dans open camera\n");
 				break;
 			case LEFT:{
 				// turn towards the wall and open camera
+				chprintf((BaseSequentialStream *) &SDU1, "dans LEFT\n");
 				turn_counterclockwise();
 			}
 			break;
 			case RIGHT:{
 				// turn towards the wall and open camera
+				chprintf((BaseSequentialStream *) &SDU1, "dans RIGHT\n");
 				turn_clockwise();
 
 			}
@@ -91,7 +94,7 @@ static THD_FUNCTION(PiRegulator, arg) {
 			switch(get_color()){
 			case CODE_BLUE:{
 				//TURN RIGHT
-				//ATTENTION DES FOIS IL FAUDRSIT TOURNER UN DEMI TOUR COMPLET
+				//ATTENTION DES FOIS IL FAUDRAIT TOURNER UN DEMI TOUR COMPLET
 				switch(wall_position){
 				case FRONT:{
 					turn_clockwise();

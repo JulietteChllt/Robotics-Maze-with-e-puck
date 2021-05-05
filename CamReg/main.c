@@ -63,14 +63,15 @@ int main(void)
 	proximity_start();
 	calibrate_ir(); //première calibration
 
-
-
-	//stars the threads for the pi regulator and the processing of the image
-	pi_regulator_start();
-	//process_image_start();
-
 	//stars the threads for the control thread
 	controle_start();
+
+	//stars the threads for the pi regulator and the processing of the image
+	//process_image_start();
+	pi_regulator_start();
+
+
+
 
     /* Infinite loop. */
     while (1) {
