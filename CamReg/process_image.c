@@ -8,20 +8,7 @@
 #include <camera/po8030.h>
 
 #include <process_image.h>
-#define MASK_RED			7
-#define MASK_BLUE			0xE0
-#define NB_BIT_BLUE_RED 	5
-#define HALF_NB_BIT_GREEN	6
-#define CODE_BLUE			1
-#define CODE_GREEN			2
-#define CODE_RED			3
-#define THRESHOLD			30
-#define THRESHOLD_BLACK 	25
-#define MIN_LINE_WIDTH		40
-#define PXTOCM 				1570.0f
-#define MAX_DISTANCE 		25.0f
-#define WIDTH_SLOPE			57
-#define GOAL_DISTANCE 		10.0f
+
 
 
 
@@ -86,8 +73,7 @@ static THD_FUNCTION(ProcessImage, arg) {
 		//gets the pointer to the array filled with the last image in RGB565    
 		img_buff_ptr = dcmi_get_last_image_ptr();
 
-		color = get_color(avg_color(get_blue(image_blue, img_buff_ptr)),avg_color(get_green(image_green, img_buff_ptr)),avg_color(get_red(image_red, img_buff_ptr)));
-<<<<<<< HEAD
+		color = determine_color(avg_color(get_blue(image_blue, img_buff_ptr)),avg_color(get_green(image_green, img_buff_ptr)),avg_color(get_red(image_red, img_buff_ptr)));
 		switch(color){
 		case CODE_BLUE:
 			//turn right
@@ -99,13 +85,11 @@ static THD_FUNCTION(ProcessImage, arg) {
 			//light up leds
 			break;
 		}
-=======
 
 		//chprintf((BaseSequentialStream *) &SDU1,"dans process image color = %d", color);
 
 
 
->>>>>>> balt
 	}
 }
 

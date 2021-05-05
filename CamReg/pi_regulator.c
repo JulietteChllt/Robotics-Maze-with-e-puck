@@ -127,13 +127,12 @@ static THD_FUNCTION(PiRegulator, arg) {
 				break;
 				}
 			}
-<<<<<<< HEAD
+
 			//semaphore_ready();
-=======
+
 			}
 
 
->>>>>>> balt
 		}
 		//apres avoir pris une image il faut qu'on recupere color et qu on tourne dans la direction indiquée
 		//peut etre utiliser un autre semaphore, ou autre moyen equivalent

@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 1
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -61,13 +57,8 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
   54 0016 4022     		movs	r2, #64
   55 0018 FFF7FEFF 		bl	chThdCreateStatic
   56              	.LVL0:
-<<<<<<< HEAD
   57              		.loc 1 77 0
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 2
-=======
-  57              		.loc 1 78 0
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 2
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 2
 
 
   58 001c 039A     		ldr	r2, [sp, #12]
@@ -127,11 +118,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  112 0010 05D1     		bne	.L12
  113 0012 0548     		ldr	r0, .L13+4
  114              	.LBE61:
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 3
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 3
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 3
 
 
  115              	.LBE60:
@@ -191,11 +178,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  169              	.LBB78:
  170              	.LBB79:
  171              	.LBB80:
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 4
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 4
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 4
 
 
  172              	.LBB81:
@@ -255,11 +238,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  226 0034 9A42     		cmp	r2, r3
  227 0036 04D0     		beq	.L17
  228 0038 9969     		ldr	r1, [r3, #24]
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 5
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 5
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 5
 
 
  229 003a 9368     		ldr	r3, [r2, #8]
@@ -319,11 +298,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  283 005c FFF7FEFF 		bl	chSemSignalI
  284              	.LVL19:
  285 0060 E0E7     		b	.L16
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 6
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 6
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 6
 
 
  286              	.LVL20:
@@ -383,11 +358,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  340 0018 0120     		movle	r0, #1
  341 001a 9A42     		cmp	r2, r3
  342 001c 01D1     		bne	.L28
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 7
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 7
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 7
 
 
  343 001e 02B0     		add	sp, sp, #8
@@ -447,11 +418,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  397 001c 2044     		add	r0, r0, r4
  398              		.loc 1 107 0
  399 001e A128     		cmp	r0, #161
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 8
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 8
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 8
 
 
  400 0020 CCBF     		ite	gt
@@ -511,11 +478,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  454              	.LBE98:
  455              		.loc 1 111 0
  456 0010 019A     		ldr	r2, [sp, #4]
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 9
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 9
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 9
 
 
  457 0012 2368     		ldr	r3, [r4]
@@ -575,11 +538,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  511              	.LVL32:
  512              	.LBE101:
  513              	.LBE100:
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 10
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 10
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 10
 
 
  514              		.loc 1 115 0
@@ -639,11 +598,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  568              		.loc 1 119 0
  569 000e 019A     		ldr	r2, [sp, #4]
  570 0010 1B68     		ldr	r3, [r3]
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 11
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 11
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 11
 
 
  571 0012 9A42     		cmp	r2, r3
@@ -703,11 +658,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  625              		.loc 1 123 0
  626 0018 FFF7FEFF 		bl	get_calibrated_prox
  627              	.LVL36:
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 12
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 12
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 12
 
 
  628 001c 064B     		ldr	r3, .L59+8
@@ -767,11 +718,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  682              		.loc 1 128 0
  683 000e 019A     		ldr	r2, [sp, #4]
  684 0010 1B68     		ldr	r3, [r3]
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 13
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 13
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 13
 
 
  685 0012 9A42     		cmp	r2, r3
@@ -831,11 +778,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  739              		.cfi_remember_state
  740              		.cfi_def_cfa_offset 4
  741              		@ sp needed
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 14
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 14
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 14
 
 
  742 0018 5DF804FB 		ldr	pc, [sp], #4
@@ -895,11 +838,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  796              	.LBE104:
  797              	.LBE103:
  798              	.LBE102:
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 15
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 15
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 15
 
 
  799              	.LBB109:
@@ -959,11 +898,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  853              	.LFE272:
  854              		.size	get_possible_directions, .-get_possible_directions
  855              		.section	.text.Controle,"ax",%progbits
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 16
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 16
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 16
 
 
  856              		.align	1
@@ -1023,11 +958,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  910              		.cfi_def_cfa_offset 64
  911              		.loc 1 37 0
  912 001a 4FF0000B 		mov	fp, #0
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 17
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 17
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 17
 
 
  913              		.loc 1 30 0
@@ -1087,11 +1018,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  967              	.L85:
  968              		.loc 1 56 0
  969 0054 FFF7FEFF 		bl	do_new_reference
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 18
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 18
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 18
 
 
  970              	.LVL58:
@@ -1151,11 +1078,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  1024 008e 502F     		cmp	r7, #80
  1025 0090 CCBF     		ite	gt
  1026 0092 0027     		movgt	r7, #0
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 19
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 19
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 19
 
 
  1027 0094 0127     		movle	r7, #1
@@ -1215,11 +1138,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  1081              		.fpu fpv4-sp-d16
  1082              		.type	get_wall_position, %function
  1083              	get_wall_position:
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 20
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 20
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 20
 
 
  1084              	.LFB273:
@@ -1279,11 +1198,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  1138 002a 0220     		movs	r0, #2
  1139 002c FFF7FEFF 		bl	get_calibrated_prox
  1140              	.LVL71:
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 21
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 21
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 21
 
 
  1141              	.LBE143:
@@ -1343,11 +1258,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  1191              		.type	open_camera_sem, %object
  1192              		.size	open_camera_sem, 12
  1193              	open_camera_sem:
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 22
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 22
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 22
 
 
  1194 0000 00000000 		.word	open_camera_sem
@@ -1407,11 +1318,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  1244              		.file 37 "../../lib/e-puck2_main-processor/ChibiOS//os/hal/ports/STM32/LLD/TIMv1/stm32_tim.h"
  1245              		.file 38 "../../lib/e-puck2_main-processor/ChibiOS//os/hal/include/i2c.h"
  1246              		.file 39 "../../lib/e-puck2_main-processor/ChibiOS//os/hal/ports/STM32/LLD/I2Cv1/i2c_lld.h"
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 23
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 23
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 23
 
 
  1247              		.file 40 "../../lib/e-puck2_main-processor/ChibiOS//os/hal/include/i2s.h"
@@ -1471,11 +1378,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  1301 003f 87260000 		.4byte	.LASF0
  1302 0043 05       		.uleb128 0x5
  1303 0044 08       		.byte	0x8
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 24
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 24
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 24
 
 
  1304 0045 05       		.byte	0x5
@@ -1535,11 +1438,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  1358 00ae D41A0000 		.4byte	.LASF14
  1359 00b2 04       		.uleb128 0x4
  1360 00b3 76120000 		.4byte	.LASF15
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 25
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 25
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 25
 
 
  1361 00b7 07       		.byte	0x7
@@ -1599,11 +1498,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  1415 012f 09       		.byte	0x9
  1416 0130 46       		.byte	0x46
  1417 0131 14010000 		.4byte	0x114
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 26
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 26
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 26
 
 
  1418 0135 04       		.uleb128 0x4
@@ -1663,11 +1558,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  1472 01aa FF000000 		.4byte	0xff
  1473 01ae 03       		.uleb128 0x3
  1474 01af A3010000 		.4byte	0x1a3
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 27
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 27
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 27
 
 
  1475 01b3 04       		.uleb128 0x4
@@ -1727,11 +1618,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  1529 021f 4C1D0000 		.4byte	.LASF44
  1530 0223 0B       		.byte	0xb
  1531 0224 D8       		.byte	0xd8
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 28
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 28
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 28
 
 
  1532 0225 20110000 		.4byte	0x1120
@@ -1791,11 +1678,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  1586 0295 6C010000 		.4byte	0x16c
  1587 0299 38       		.byte	0x38
  1588 029a 0A       		.uleb128 0xa
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 29
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 29
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 29
 
 
  1589 029b 40200000 		.4byte	.LASF53
@@ -1855,11 +1738,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  1643 030f 00       		.byte	0
  1644 0310 00       		.byte	0
  1645 0311 04       		.uleb128 0x4
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 30
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 30
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 30
 
 
  1646 0312 CD180000 		.4byte	.LASF62
@@ -1919,11 +1798,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  1700 0385 0B       		.byte	0xb
  1701 0386 9701     		.2byte	0x197
  1702 0388 E7020000 		.4byte	0x2e7
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 31
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 31
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 31
 
 
  1703 038c 10       		.byte	0x10
@@ -1983,11 +1858,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  1757 03fd 0B       		.byte	0xb
  1758 03fe 6E01     		.2byte	0x16e
  1759 0400 A3010000 		.4byte	0x1a3
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 32
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 32
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 32
 
 
  1760 0404 08       		.byte	0x8
@@ -2047,11 +1918,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  1814 0474 78040000 		.4byte	0x478
  1815 0478 10       		.uleb128 0x10
  1816 0479 951F0000 		.4byte	.LASF84
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 33
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 33
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 33
 
 
  1817 047d 1404     		.2byte	0x414
@@ -2111,11 +1978,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  1871 04f3 0B       		.byte	0xb
  1872 04f4 CE01     		.2byte	0x1ce
  1873 04f6 6D040000 		.4byte	0x46d
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 34
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 34
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 34
 
 
  1874 04fa 2C       		.byte	0x2c
@@ -2175,11 +2038,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  1928 056e 61060000 		.4byte	0x661
  1929 0572 18       		.uleb128 0x18
  1930 0573 535200   		.ascii	"SR\000"
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 35
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 35
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 35
 
 
  1931 0576 0E       		.byte	0xe
@@ -2239,11 +2098,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  1985 05e2 0E       		.byte	0xe
  1986 05e3 CF       		.byte	0xcf
  1987 05e4 0A010000 		.4byte	0x10a
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 36
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 36
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 36
 
 
  1988 05e8 24       		.byte	0x24
@@ -2303,11 +2158,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  2042 0654 48       		.byte	0x48
  2043 0655 18       		.uleb128 0x18
  2044 0656 445200   		.ascii	"DR\000"
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 37
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 37
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 37
 
 
  2045 0659 0E       		.byte	0xe
@@ -2367,11 +2218,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  2099 06bf 0A010000 		.4byte	0x10a
  2100 06c3 00       		.byte	0
  2101 06c4 08       		.uleb128 0x8
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 38
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 38
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 38
 
 
  2102 06c5 491F0000 		.4byte	.LASF117
@@ -2431,11 +2278,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  2156 0734 0D01     		.2byte	0x10d
  2157 0736 0A010000 		.4byte	0x10a
  2158 073a 00       		.byte	0
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 39
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 39
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 39
 
 
  2159 073b 09       		.uleb128 0x9
@@ -2495,11 +2338,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  2213 07b1 11       		.uleb128 0x11
  2214 07b2 E9240000 		.4byte	.LASF126
  2215 07b6 0E       		.byte	0xe
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 40
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 40
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 40
 
 
  2216 07b7 1701     		.2byte	0x117
@@ -2559,11 +2398,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  2270 0835 2001     		.2byte	0x120
  2271 0837 0A010000 		.4byte	0x10a
  2272 083b 1C02     		.2byte	0x21c
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 41
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 41
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 41
 
 
  2273 083d 11       		.uleb128 0x11
@@ -2623,11 +2458,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  2327 08b7 38       		.byte	0x38
  2328 08b8 0E       		.byte	0xe
  2329 08b9 3601     		.2byte	0x136
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 42
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 42
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 42
 
 
  2330 08bb 74090000 		.4byte	0x974
@@ -2687,11 +2518,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  2384 0932 20       		.byte	0x20
  2385 0933 0A       		.uleb128 0xa
  2386 0934 1E1D0000 		.4byte	.LASF146
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 43
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 43
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 43
 
 
  2387 0938 0E       		.byte	0xe
@@ -2751,11 +2578,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  2441 09a7 5C01     		.2byte	0x15c
  2442 09a9 0A010000 		.4byte	0x10a
  2443 09ad 08       		.byte	0x8
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 44
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 44
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 44
 
 
  2444 09ae 09       		.uleb128 0x9
@@ -2815,11 +2638,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  2498 0a22 19       		.uleb128 0x19
  2499 0a23 18       		.byte	0x18
  2500 0a24 0E       		.byte	0xe
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 45
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 45
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 45
 
 
  2501 0a25 6B01     		.2byte	0x16b
@@ -2879,11 +2698,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  2555 0a9b 0A010000 		.4byte	0x10a
  2556 0a9f AA0A0000 		.4byte	0xaaa
  2557 0aa3 14       		.uleb128 0x14
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 46
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 46
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 46
 
 
  2558 0aa4 3C000000 		.4byte	0x3c
@@ -2943,11 +2758,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  2612 0b17 0E       		.byte	0xe
  2613 0b18 4802     		.2byte	0x248
  2614 0b1a 0A010000 		.4byte	0x10a
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 47
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 47
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 47
 
 
  2615 0b1e 1C       		.byte	0x1c
@@ -3007,11 +2818,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  2669 0b90 0A       		.uleb128 0xa
  2670 0b91 18060000 		.4byte	.LASF170
  2671 0b95 0E       		.byte	0xe
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 48
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 48
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 48
 
 
  2672 0b96 C602     		.2byte	0x2c6
@@ -3071,11 +2878,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  2726 0c0b CF02     		.2byte	0x2cf
  2727 0c0d 0A010000 		.4byte	0x10a
  2728 0c11 38       		.byte	0x38
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 49
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 49
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 49
 
 
  2729 0c12 0A       		.uleb128 0xa
@@ -3135,11 +2938,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  2783 0c86 09       		.uleb128 0x9
  2784 0c87 43523200 		.ascii	"CR2\000"
  2785 0c8b 0E       		.byte	0xe
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 50
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 50
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 50
 
 
  2786 0c8c DE02     		.2byte	0x2de
@@ -3199,11 +2998,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  2840 0cfc 0903     		.2byte	0x309
  2841 0cfe 5C0D0000 		.4byte	0xd5c
  2842 0d02 09       		.uleb128 0x9
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 51
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 51
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 51
 
 
  2843 0d03 535200   		.ascii	"SR\000"
@@ -3263,11 +3058,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  2897 0d78 03       		.uleb128 0x3
  2898 0d79 680D0000 		.4byte	0xd68
  2899 0d7d 04       		.uleb128 0x4
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 52
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 52
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 52
 
 
  2900 0d7e 951A0000 		.4byte	.LASF190
@@ -3327,11 +3118,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  2954 0ded 10       		.byte	0x10
  2955 0dee FA       		.byte	0xfa
  2956 0def 7D0D0000 		.4byte	0xd7d
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 53
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 53
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 53
 
 
  2957 0df3 10       		.byte	0x10
@@ -3391,11 +3178,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  3011 0e63 34       		.byte	0x34
  3012 0e64 09       		.uleb128 0x9
  3013 0e65 73333000 		.ascii	"s30\000"
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 54
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 54
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 54
 
 
  3014 0e69 10       		.byte	0x10
@@ -3455,11 +3238,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  3068 0ed8 10       		.byte	0x10
  3069 0ed9 0E01     		.2byte	0x10e
  3070 0edb 7D0D0000 		.4byte	0xd7d
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 55
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 55
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 55
 
 
  3071 0edf 5C       		.byte	0x5c
@@ -3519,11 +3298,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  3125 0f46 6B       		.byte	0x6b
  3126 0f47 3C000000 		.4byte	0x3c
  3127 0f4b 00       		.byte	0
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 56
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 56
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 56
 
 
  3128 0f4c 08       		.uleb128 0x8
@@ -3583,11 +3358,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  3182 0fb5 1F010000 		.4byte	0x11f
  3183 0fb9 00       		.byte	0
  3184 0fba 08       		.uleb128 0x8
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 57
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 57
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 57
 
 
  3185 0fbb 5F010000 		.4byte	.LASF206
@@ -3647,11 +3418,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  3239 1025 13       		.byte	0x13
  3240 1026 3D       		.byte	0x3d
  3241 1027 E90F0000 		.4byte	0xfe9
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 58
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 58
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 58
 
 
  3242 102b 20       		.byte	0x20
@@ -3711,11 +3478,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  3296 10a1 14       		.byte	0x14
  3297 10a2 34       		.byte	0x34
  3298 10a3 C0100000 		.4byte	0x10c0
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 59
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 59
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 59
 
 
  3299 10a7 08       		.uleb128 0x8
@@ -3775,11 +3538,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  3353 1110 09110000 		.4byte	0x1109
  3354 1114 05       		.uleb128 0x5
  3355 1115 01       		.byte	0x1
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 60
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 60
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 60
 
 
  3356 1116 08       		.byte	0x8
@@ -3839,11 +3598,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  3410 1185 39       		.byte	0x39
  3411 1186 C4000000 		.4byte	0xc4
  3412 118a 08       		.byte	0x8
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 61
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 61
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 61
 
 
  3413 118b 08       		.uleb128 0x8
@@ -3903,11 +3658,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  3467 11f7 08       		.uleb128 0x8
  3468 11f8 89020000 		.4byte	.LASF245
  3469 11fc 05       		.byte	0x5
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 62
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 62
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 62
 
 
  3470 11fd 44       		.byte	0x44
@@ -3967,11 +3718,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  3524 126c 4C       		.byte	0x4c
  3525 126d 53120000 		.4byte	0x1253
  3526 1271 00       		.byte	0
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 63
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 63
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 63
 
 
  3527 1272 00       		.byte	0
@@ -4031,11 +3778,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  3581 12e1 10       		.byte	0x10
  3582 12e2 00       		.byte	0
  3583 12e3 0B       		.uleb128 0xb
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 64
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 64
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 64
 
 
  3584 12e4 04       		.byte	0x4
@@ -4095,11 +3838,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  3638 1353 10       		.byte	0x10
  3639 1354 08       		.uleb128 0x8
  3640 1355 321B0000 		.4byte	.LASF271
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 65
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 65
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 65
 
 
  3641 1359 17       		.byte	0x17
@@ -4159,11 +3898,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  3695 13c8 DC130000 		.4byte	0x13dc
  3696 13cc 0E       		.uleb128 0xe
  3697 13cd C4030000 		.4byte	0x3c4
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 66
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 66
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 66
 
 
  3698 13d1 0E       		.uleb128 0xe
@@ -4223,11 +3958,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  3752 1449 00       		.byte	0
  3753 144a 08       		.uleb128 0x8
  3754 144b 9F110000 		.4byte	.LASF279
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 67
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 67
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 67
 
 
  3755 144f 18       		.byte	0x18
@@ -4287,11 +4018,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  3809 14c2 C4030000 		.4byte	0x3c4
  3810 14c6 0E       		.uleb128 0xe
  3811 14c7 C4000000 		.4byte	0xc4
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 68
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 68
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 68
 
 
  3812 14cb 0E       		.uleb128 0xe
@@ -4351,11 +4078,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  3866 1546 22       		.uleb128 0x22
  3867 1547 43010000 		.4byte	.LASF285
  3868 154b 00       		.byte	0
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 69
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 69
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 69
 
 
  3869 154c 22       		.uleb128 0x22
@@ -4415,11 +4138,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  3923 15b5 C3150000 		.4byte	0x15c3
  3924 15b9 C3150000 		.4byte	0x15c3
  3925 15bd 0E       		.uleb128 0xe
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 70
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 70
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 70
 
 
  3926 15be C4030000 		.4byte	0x3c4
@@ -4479,11 +4198,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  3980 1639 FF000000 		.4byte	0xff
  3981 163d 48160000 		.4byte	0x1648
  3982 1641 14       		.uleb128 0x14
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 71
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 71
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 71
 
 
  3983 1642 3C000000 		.4byte	0x3c
@@ -4543,11 +4258,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  4037 16a4 0A010000 		.4byte	0x10a
  4038 16a8 04       		.byte	0x4
  4039 16a9 08       		.uleb128 0x8
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 72
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 72
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 72
 
 
  4040 16aa 260F0000 		.4byte	.LASF302
@@ -4607,11 +4318,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  4094 1716 04       		.uleb128 0x4
  4095 1717 B7110000 		.4byte	.LASF308
  4096 171b 1A       		.byte	0x1a
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 73
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 73
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 73
 
 
  4097 171c BC       		.byte	0xbc
@@ -4671,11 +4378,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  4151 1785 21170000 		.4byte	0x1721
  4152 1789 17       		.uleb128 0x17
  4153 178a FC       		.byte	0xfc
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 74
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 74
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 74
 
 
  4154 178b 1A       		.byte	0x1a
@@ -4735,11 +4438,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  4208 17f7 FC       		.byte	0xfc
  4209 17f8 7E170000 		.4byte	0x177e
  4210 17fc E0       		.byte	0xe0
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 75
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 75
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 75
 
 
  4211 17fd 00       		.byte	0
@@ -4799,11 +4498,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  4265 186e 1C       		.byte	0x1c
  4266 186f 2701     		.2byte	0x127
  4267 1871 E4000000 		.4byte	0xe4
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 76
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 76
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 76
 
 
  4268 1875 1A       		.uleb128 0x1a
@@ -4863,11 +4558,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  4322 18e9 AA1A0000 		.4byte	.LASF344
  4323 18ed 1C       		.byte	0x1c
  4324 18ee AF01     		.2byte	0x1af
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 77
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 77
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 77
 
 
  4325 18f0 31000000 		.4byte	0x31
@@ -4927,11 +4618,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  4379 1966 31000000 		.4byte	0x31
  4380 196a 00       		.byte	0
  4381 196b 0B       		.uleb128 0xb
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 78
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 78
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 78
 
 
  4382 196c 04       		.byte	0x4
@@ -4991,11 +4678,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  4436 19e2 0C       		.byte	0xc
  4437 19e3 09       		.uleb128 0x9
  4438 19e4 63723200 		.ascii	"cr2\000"
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 79
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 79
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 79
 
 
  4439 19e8 1C       		.byte	0x1c
@@ -5055,11 +4738,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  4493 1a5a 1A       		.uleb128 0x1a
  4494 1a5b CA0F0000 		.4byte	.LASF363
  4495 1a5f 1C       		.byte	0x1c
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 80
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 80
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 80
 
 
  4496 1a60 9A01     		.2byte	0x19a
@@ -5119,11 +4798,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  4550 1ad3 04       		.uleb128 0x4
  4551 1ad4 390E0000 		.4byte	.LASF372
  4552 1ad8 1D       		.byte	0x1d
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 81
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 81
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 81
 
 
  4553 1ad9 65       		.byte	0x65
@@ -5183,11 +4858,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  4607 1b4a 1201     		.2byte	0x112
  4608 1b4c 11030000 		.4byte	0x311
  4609 1b50 08       		.byte	0x8
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 82
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 82
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 82
 
 
  4610 1b51 0A       		.uleb128 0xa
@@ -5247,11 +4918,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  4664 1bc5 15       		.uleb128 0x15
  4665 1bc6 A4220000 		.4byte	.LASF382
  4666 1bca 1E       		.byte	0x1e
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 83
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 83
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 83
 
 
  4667 1bcb 4B01     		.2byte	0x14b
@@ -5311,11 +4978,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  4721 1c37 FF000000 		.4byte	0xff
  4722 1c3b 08       		.byte	0x8
  4723 1c3c 0A       		.uleb128 0xa
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 84
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 84
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 84
 
 
  4724 1c3d C6010000 		.4byte	.LASF392
@@ -5375,11 +5038,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  4778 1cb4 8301     		.2byte	0x183
  4779 1cb6 481E0000 		.4byte	0x1e48
  4780 1cba 04       		.byte	0x4
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 85
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 85
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 85
 
 
  4781 1cbb 0A       		.uleb128 0xa
@@ -5439,11 +5098,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  4835 1d2f 22       		.uleb128 0x22
  4836 1d30 95090000 		.4byte	.LASF399
  4837 1d34 01       		.byte	0x1
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 86
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 86
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 86
 
 
  4838 1d35 00       		.byte	0
@@ -5503,11 +5158,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  4892 1dab 22       		.uleb128 0x22
  4893 1dac 85140000 		.4byte	.LASF404
  4894 1db0 01       		.byte	0x1
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 87
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 87
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 87
 
 
  4895 1db1 22       		.uleb128 0x22
@@ -5567,11 +5218,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  4949 1e22 7101     		.2byte	0x171
  4950 1e24 0A1D0000 		.4byte	0x1d0a
  4951 1e28 00       		.byte	0
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 88
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 88
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 88
 
 
  4952 1e29 0A       		.uleb128 0xa
@@ -5631,11 +5278,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  5006 1e98 9C1E0000 		.4byte	0x1e9c
  5007 1e9c 07       		.uleb128 0x7
  5008 1e9d 1A090000 		.4byte	.LASF417
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 89
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 89
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 89
 
 
  5009 1ea1 08       		.byte	0x8
@@ -5695,11 +5338,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  5063 1f0c 5F       		.byte	0x5f
  5064 1f0d CC1E0000 		.4byte	0x1ecc
  5065 1f11 04       		.byte	0x4
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 90
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 90
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 90
 
 
  5066 1f12 00       		.byte	0
@@ -5759,11 +5398,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  5120 1f7e 0A1B0000 		.4byte	.LASF427
  5121 1f82 02       		.byte	0x2
  5122 1f83 22       		.uleb128 0x22
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 91
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 91
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 91
 
 
  5123 1f84 2B080000 		.4byte	.LASF428
@@ -5823,11 +5458,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  5177 1ff5 F91F0000 		.4byte	0x1ff9
  5178 1ff9 0D       		.uleb128 0xd
  5179 1ffa 04200000 		.4byte	0x2004
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 92
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 92
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 92
 
 
  5180 1ffe 0E       		.uleb128 0xe
@@ -5887,11 +5518,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  5234 206e 7B260000 		.4byte	.LASF437
  5235 2072 25       		.byte	0x25
  5236 2073 A601     		.2byte	0x1a6
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 93
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 93
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 93
 
 
  5237 2075 0A010000 		.4byte	0x10a
@@ -5951,11 +5578,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  5291 20ea 0A010000 		.4byte	0x10a
  5292 20ee 4C       		.byte	0x4c
  5293 20ef 09       		.uleb128 0x9
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 94
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 94
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 94
 
 
  5294 20f0 4F5200   		.ascii	"OR\000"
@@ -6015,11 +5638,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  5348 2164 9101     		.2byte	0x191
  5349 2166 FF000000 		.4byte	0xff
  5350 216a 0C       		.byte	0xc
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 95
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 95
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 95
 
 
  5351 216b 00       		.byte	0
@@ -6079,11 +5698,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  5405 21da A1210000 		.4byte	0x21a1
  5406 21de 1A       		.uleb128 0x1a
  5407 21df EF040000 		.4byte	.LASF458
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 96
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 96
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 96
 
 
  5408 21e3 27       		.byte	0x27
@@ -6143,11 +5758,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  5462 2252 27       		.byte	0x27
  5463 2253 8601     		.2byte	0x186
  5464 2255 81220000 		.4byte	0x2281
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 97
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 97
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 97
 
 
  5465 2259 0A       		.uleb128 0xa
@@ -6207,11 +5818,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  5519 22d1 08       		.byte	0x8
  5520 22d2 0A       		.uleb128 0xa
  5521 22d3 3E0D0000 		.4byte	.LASF347
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 98
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 98
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 98
 
 
  5522 22d7 27       		.byte	0x27
@@ -6271,11 +5878,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  5576 2348 3F130000 		.4byte	.LASF479
  5577 234c 27       		.byte	0x27
  5578 234d E001     		.2byte	0x1e0
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 99
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 99
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 99
 
 
  5579 234f 92220000 		.4byte	0x2292
@@ -6335,11 +5938,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  5633 23c1 29       		.byte	0x29
  5634 23c2 2801     		.2byte	0x128
  5635 23c4 A9240000 		.4byte	0x24a9
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 100
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 100
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 100
 
 
  5636 23c8 08       		.byte	0x8
@@ -6399,11 +5998,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  5690 2439 29       		.byte	0x29
  5691 243a F1       		.byte	0xf1
  5692 243b 8B240000 		.4byte	0x248b
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 101
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 101
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 101
 
 
  5693 243f 08       		.uleb128 0x8
@@ -6463,11 +6058,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  5747 24af 15       		.uleb128 0x15
  5748 24b0 99270000 		.4byte	.LASF494
  5749 24b4 29       		.byte	0x29
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 102
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 102
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 102
 
 
  5750 24b5 4801     		.2byte	0x148
@@ -6527,11 +6118,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  5804 2526 F41B0000 		.4byte	.LASF501
  5805 252a 2B       		.byte	0x2b
  5806 252b 8901     		.2byte	0x189
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 103
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 103
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 103
 
 
  5807 252d 94250000 		.4byte	0x2594
@@ -6591,11 +6178,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  5861 25a5 2B       		.byte	0x2b
  5862 25a6 3401     		.2byte	0x134
  5863 25a8 FF000000 		.4byte	0xff
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 104
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 104
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 104
 
 
  5864 25ac 19       		.uleb128 0x19
@@ -6655,11 +6238,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  5918 261e 2B       		.byte	0x2b
  5919 261f 6601     		.2byte	0x166
  5920 2621 FF000000 		.4byte	0xff
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 105
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 105
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 105
 
 
  5921 2625 2C       		.byte	0x2c
@@ -6719,11 +6298,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  5975 269d 00       		.byte	0
  5976 269e 22       		.uleb128 0x22
  5977 269f A90D0000 		.4byte	.LASF514
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 106
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 106
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 106
 
 
  5978 26a3 01       		.byte	0x1
@@ -6783,11 +6358,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  6032 270e 7B       		.byte	0x7b
  6033 270f B0270000 		.4byte	0x27b0
  6034 2713 54       		.byte	0x54
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 107
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 107
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 107
 
 
  6035 2714 18       		.uleb128 0x18
@@ -6847,11 +6418,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  6089 2780 08       		.uleb128 0x8
  6090 2781 DE190000 		.4byte	.LASF526
  6091 2785 2C       		.byte	0x2c
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 108
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 108
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 108
 
 
  6092 2786 6E       		.byte	0x6e
@@ -6911,11 +6478,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  6146 27f2 471C0000 		.4byte	.LASF533
  6147 27f6 2F       		.byte	0x2f
  6148 27f7 BF       		.byte	0xbf
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 109
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 109
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 109
 
 
  6149 27f8 FF000000 		.4byte	0xff
@@ -6975,11 +6538,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  6203 2867 64160000 		.4byte	.LASF537
  6204 286b 2F       		.byte	0x2f
  6205 286c FF       		.byte	0xff
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 110
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 110
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 110
 
 
  6206 286d F1270000 		.4byte	0x27f1
@@ -7039,11 +6598,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  6260 28dc E6270000 		.4byte	0x27e6
  6261 28e0 04       		.byte	0x4
  6262 28e1 00       		.byte	0
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 111
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 111
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 111
 
 
  6263 28e2 04       		.uleb128 0x4
@@ -7103,11 +6658,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  6317 2951 18       		.byte	0x18
  6318 2952 08       		.uleb128 0x8
  6319 2953 98240000 		.4byte	.LASF548
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 112
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 112
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 112
 
 
  6320 2957 2F       		.byte	0x2f
@@ -7167,11 +6718,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  6374 29c5 0C       		.uleb128 0xc
  6375 29c6 B8220000 		.4byte	.LASF556
  6376 29ca 34       		.byte	0x34
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 113
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 113
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 113
 
 
  6377 29cb 31       		.byte	0x31
@@ -7231,11 +6778,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  6431 2a40 E601     		.2byte	0x1e6
  6432 2a42 FF000000 		.4byte	0xff
  6433 2a46 30       		.byte	0x30
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 114
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 114
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 114
 
 
  6434 2a47 00       		.byte	0
@@ -7295,11 +6838,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  6488 2aba 0B       		.uleb128 0xb
  6489 2abb 04       		.byte	0x4
  6490 2abc B52A0000 		.4byte	0x2ab5
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 115
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 115
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 115
 
 
  6491 2ac0 15       		.uleb128 0x15
@@ -7359,11 +6898,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  6545 2b38 33       		.byte	0x33
  6546 2b39 9901     		.2byte	0x199
  6547 2b3b 7A350000 		.4byte	0x357a
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 116
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 116
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 116
 
 
  6548 2b3f 28       		.byte	0x28
@@ -7423,11 +6958,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  6602 2bb4 50       		.byte	0x50
  6603 2bb5 0A       		.uleb128 0xa
  6604 2bb6 850E0000 		.4byte	.LASF575
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 117
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 117
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 117
 
 
  6605 2bba 33       		.byte	0x33
@@ -7487,11 +7018,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  6659 2c29 C1140000 		.4byte	.LASF583
  6660 2c2d 02       		.byte	0x2
  6661 2c2e 22       		.uleb128 0x22
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 118
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 118
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 118
 
 
  6662 2c2f B61A0000 		.4byte	.LASF584
@@ -7551,11 +7078,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  6716 2c9f 00       		.byte	0
  6717 2ca0 22       		.uleb128 0x22
  6718 2ca1 4F1B0000 		.4byte	.LASF596
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 119
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 119
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 119
 
 
  6719 2ca5 01       		.byte	0x1
@@ -7615,11 +7138,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  6773 2d17 0E       		.uleb128 0xe
  6774 2d18 1D2D0000 		.4byte	0x2d1d
  6775 2d1c 00       		.byte	0
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 120
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 120
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 120
 
 
  6776 2d1d 0B       		.uleb128 0xb
@@ -7679,11 +7198,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  6830 2d96 9A2D0000 		.4byte	0x2d9a
  6831 2d9a 20       		.uleb128 0x20
  6832 2d9b B82D0000 		.4byte	0x2db8
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 121
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 121
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 121
 
 
  6833 2d9f B82D0000 		.4byte	0x2db8
@@ -7743,11 +7258,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  6887 2e0e 08       		.uleb128 0x8
  6888 2e0f FC0D0000 		.4byte	.LASF616
  6889 2e13 34       		.byte	0x34
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 122
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 122
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 122
 
 
  6890 2e14 3F       		.byte	0x3f
@@ -7807,11 +7318,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  6944 2e7d 0A010000 		.4byte	0x10a
  6945 2e81 14       		.byte	0x14
  6946 2e82 08       		.uleb128 0x8
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 123
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 123
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 123
 
 
  6947 2e83 48070000 		.4byte	.LASF624
@@ -7871,11 +7378,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  7001 2eef 34       		.byte	0x34
  7002 2ef0 61       		.byte	0x61
  7003 2ef1 0A010000 		.4byte	0x10a
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 124
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 124
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 124
 
 
  7004 2ef5 14       		.byte	0x14
@@ -7935,11 +7438,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  7058 2f61 08       		.uleb128 0x8
  7059 2f62 130C0000 		.4byte	.LASF636
  7060 2f66 34       		.byte	0x34
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 125
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 125
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 125
 
 
  7061 2f67 6F       		.byte	0x6f
@@ -7999,11 +7498,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  7115 2fd3 7C       		.byte	0x7c
  7116 2fd4 0A010000 		.4byte	0x10a
  7117 2fd8 38       		.byte	0x38
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 126
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 126
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 126
 
 
  7118 2fd9 18       		.uleb128 0x18
@@ -8063,11 +7558,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  7172 304c 27       		.uleb128 0x27
  7173 304d D0020000 		.4byte	.LASF654
  7174 3051 34       		.byte	0x34
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 127
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 127
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 127
 
 
  7175 3052 89       		.byte	0x89
@@ -8127,11 +7618,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  7229 30c6 96       		.byte	0x96
  7230 30c7 0A010000 		.4byte	0x10a
  7231 30cb 0408     		.2byte	0x804
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 128
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 128
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 128
 
 
  7232 30cd 27       		.uleb128 0x27
@@ -8191,11 +7678,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  7286 3142 27       		.uleb128 0x27
  7287 3143 620F0000 		.4byte	.LASF672
  7288 3147 34       		.byte	0x34
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 129
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 129
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 129
 
 
  7289 3148 A5       		.byte	0xa5
@@ -8255,11 +7738,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  7343 31bb B0       		.byte	0xb0
  7344 31bc 95320000 		.4byte	0x3295
  7345 31c0 000B     		.2byte	0xb00
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 130
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 130
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 130
 
 
  7346 31c2 27       		.uleb128 0x27
@@ -8319,11 +7798,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  7400 323b 46320000 		.4byte	0x3246
  7401 323f 14       		.uleb128 0x14
  7402 3240 3C000000 		.4byte	0x3c
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 131
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 131
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 131
 
 
  7403 3244 2E       		.byte	0x2e
@@ -8383,11 +7858,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  7457 32bf D1320000 		.4byte	0x32d1
  7458 32c3 14       		.uleb128 0x14
  7459 32c4 3C000000 		.4byte	0x3c
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 132
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 132
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 132
 
 
  7460 32c8 0F       		.byte	0xf
@@ -8447,11 +7918,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  7514 3332 00       		.byte	0
  7515 3333 17       		.uleb128 0x17
  7516 3334 04       		.byte	0x4
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 133
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 133
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 133
 
 
  7517 3335 33       		.byte	0x33
@@ -8511,11 +7978,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  7571 339e 33       		.byte	0x33
  7572 339f E9       		.byte	0xe9
  7573 33a0 4E330000 		.4byte	0x334e
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 134
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 134
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 134
 
 
  7574 33a4 0C       		.byte	0xc
@@ -8575,11 +8038,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  7628 340e D4330000 		.4byte	0x33d4
  7629 3412 00       		.byte	0
  7630 3413 17       		.uleb128 0x17
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 135
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 135
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 135
 
 
  7631 3414 14       		.byte	0x14
@@ -8639,11 +8098,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  7685 3482 2701     		.2byte	0x127
  7686 3484 232D0000 		.4byte	0x2d23
  7687 3488 04       		.byte	0x4
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 136
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 136
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 136
 
 
  7688 3489 0A       		.uleb128 0xa
@@ -8703,11 +8158,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  7742 34fa 5A340000 		.4byte	0x345a
  7743 34fe 1A       		.uleb128 0x1a
  7744 34ff A3200000 		.4byte	.LASF711
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 137
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 137
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 137
 
 
  7745 3503 33       		.byte	0x33
@@ -8767,11 +8218,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  7799 3576 0A350000 		.4byte	0x350a
  7800 357a 13       		.uleb128 0x13
  7801 357b C4030000 		.4byte	0x3c4
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 138
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 138
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 138
 
 
  7802 357f 8A350000 		.4byte	0x358a
@@ -8831,11 +8278,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  7856 35f0 E5       		.byte	0xe5
  7857 35f1 56360000 		.4byte	0x3656
  7858 35f5 18       		.uleb128 0x18
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 139
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 139
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 139
 
 
  7859 35f6 766D7400 		.ascii	"vmt\000"
@@ -8895,11 +8338,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  7913 365f FC230000 		.4byte	.LASF723
  7914 3663 35       		.byte	0x35
  7915 3664 AB       		.byte	0xab
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 140
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 140
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 140
 
 
  7916 3665 1D2D0000 		.4byte	0x2d1d
@@ -8959,11 +8398,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  7970 36d4 35       		.byte	0x35
  7971 36d5 DB       		.byte	0xdb
  7972 36d6 30140000 		.4byte	0x1430
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 141
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 141
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 141
 
 
  7973 36da 0C       		.byte	0xc
@@ -9023,11 +8458,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  8027 3749 16       		.byte	0x16
  8028 374a DD350000 		.4byte	0x35dd
  8029 374e 04       		.uleb128 0x4
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 142
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 142
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 142
 
 
  8030 374f AD070000 		.4byte	.LASF732
@@ -9087,11 +8518,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  8084 37c2 38       		.byte	0x38
  8085 37c3 A5       		.byte	0xa5
  8086 37c4 25000000 		.4byte	0x25
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 143
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 143
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 143
 
 
  8087 37c8 00       		.byte	0
@@ -9151,11 +8578,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  8141 3833 580A0000 		.4byte	.LASF747
  8142 3837 39       		.byte	0x39
  8143 3838 32       		.byte	0x32
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 144
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 144
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 144
 
 
  8144 3839 25000000 		.4byte	0x25
@@ -9215,11 +8638,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  8198 38a7 10       		.byte	0x10
  8199 38a8 08       		.uleb128 0x8
  8200 38a9 A90B0000 		.4byte	.LASF754
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 145
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 145
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 145
 
 
  8201 38ad 39       		.byte	0x39
@@ -9279,11 +8698,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  8255 3919 13       		.uleb128 0x13
  8256 391a C4030000 		.4byte	0x3c4
  8257 391e 29390000 		.4byte	0x3929
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 146
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 146
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 146
 
 
  8258 3922 14       		.uleb128 0x14
@@ -9343,11 +8758,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  8312 398c A9390000 		.4byte	0x39a9
  8313 3990 08       		.uleb128 0x8
  8314 3991 16140000 		.4byte	.LASF767
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 147
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 147
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 147
 
 
  8315 3995 39       		.byte	0x39
@@ -9407,11 +8818,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  8369 39fb 84390000 		.4byte	0x3984
  8370 39ff 10       		.byte	0x10
  8371 3a00 08       		.uleb128 0x8
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 148
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 148
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 148
 
 
  8372 3a01 6F040000 		.4byte	.LASF772
@@ -9471,11 +8878,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  8426 3a6d EB1D0000 		.4byte	.LASF778
  8427 3a71 39       		.byte	0x39
  8428 3a72 D3       		.byte	0xd3
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 149
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 149
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 149
 
 
  8429 3a73 A23C0000 		.4byte	0x3ca2
@@ -9535,11 +8938,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  8483 3ae2 0E       		.uleb128 0xe
  8484 3ae3 F73A0000 		.4byte	0x3af7
  8485 3ae7 0E       		.uleb128 0xe
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 150
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 150
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 150
 
 
  8486 3ae8 C4030000 		.4byte	0x3c4
@@ -9599,11 +8998,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  8540 3b5f D2220000 		.4byte	.LASF793
  8541 3b63 39       		.byte	0x39
  8542 3b64 4602     		.2byte	0x246
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 151
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 151
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 151
 
 
  8543 3b66 25000000 		.4byte	0x25
@@ -9663,11 +9058,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  8597 3bdb 343C0000 		.4byte	0x3c34
  8598 3bdf 54       		.byte	0x54
  8599 3be0 0A       		.uleb128 0xa
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 152
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 152
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 152
 
 
  8600 3be1 C9040000 		.4byte	.LASF803
@@ -9727,11 +9118,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  8654 3c5e 0B       		.uleb128 0xb
  8655 3c5f 04       		.byte	0x4
  8656 3c60 403C0000 		.4byte	0x3c40
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 153
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 153
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 153
 
 
  8657 3c64 20       		.uleb128 0x20
@@ -9791,11 +9178,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  8711 3ce1 2501     		.2byte	0x125
  8712 3ce3 033D0000 		.4byte	0x3d03
  8713 3ce7 00       		.byte	0
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 154
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 154
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 154
 
 
  8714 3ce8 0A       		.uleb128 0xa
@@ -9855,11 +9238,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  8768 3d57 5902     		.2byte	0x259
  8769 3d59 553E0000 		.4byte	0x3e55
  8770 3d5d 0A       		.uleb128 0xa
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 155
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 155
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 155
 
 
  8771 3d5e 49080000 		.4byte	.LASF816
@@ -9919,11 +9298,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  8825 3dd3 8F030000 		.4byte	.LASF825
  8826 3dd7 39       		.byte	0x39
  8827 3dd8 6402     		.2byte	0x264
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 156
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 156
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 156
 
 
  8828 3dda D6370000 		.4byte	0x37d6
@@ -9983,11 +9358,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  8882 3e4f 25000000 		.4byte	0x25
  8883 3e53 CC       		.byte	0xcc
  8884 3e54 00       		.byte	0
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 157
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 157
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 157
 
 
  8885 3e55 13       		.uleb128 0x13
@@ -10047,11 +9418,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  8939 3eca F0       		.byte	0xf0
  8940 3ecb 39       		.byte	0x39
  8941 3ecc 5702     		.2byte	0x257
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 158
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 158
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 158
 
 
  8942 3ece EB3E0000 		.4byte	0x3eeb
@@ -10111,11 +9478,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  8996 3f45 AA1D0000 		.4byte	.LASF840
  8997 3f49 39       		.byte	0x39
  8998 3f4a 0703     		.2byte	0x307
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 159
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 159
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 159
 
 
  8999 3f4c F73A0000 		.4byte	0x3af7
@@ -10175,11 +9538,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  9053 3fb9 1F1B0000 		.4byte	.LASF852
  9054 3fbd 07       		.byte	0x7
  9055 3fbe 00       		.byte	0
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 160
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 160
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 160
 
 
  9056 3fbf 04       		.uleb128 0x4
@@ -10239,11 +9598,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  9110 402b 2F400000 		.4byte	0x402f
  9111 402f 0D       		.uleb128 0xd
  9112 4030 3A400000 		.4byte	0x403a
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 161
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 161
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 161
 
 
  9113 4034 0E       		.uleb128 0xe
@@ -10303,11 +9658,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  9167 409f BE       		.byte	0xbe
  9168 40a0 61400000 		.4byte	0x4061
  9169 40a4 06       		.uleb128 0x6
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 162
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 162
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 162
 
 
  9170 40a5 99400000 		.4byte	0x4099
@@ -10367,11 +9718,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  9224 411a 0D       		.byte	0xd
  9225 411b C4030000 		.4byte	0x3c4
  9226 411f 00       		.byte	0
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 163
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 163
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 163
 
 
  9227 4120 08       		.uleb128 0x8
@@ -10431,11 +9778,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  9281 418c 25       		.byte	0x25
  9282 418d AA410000 		.4byte	0x41aa
  9283 4191 08       		.uleb128 0x8
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 164
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 164
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 164
 
 
  9284 4192 741F0000 		.4byte	.LASF878
@@ -10495,11 +9838,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  9338 41fb 04       		.byte	0x4
  9339 41fc 08       		.uleb128 0x8
  9340 41fd B0060000 		.4byte	.LASF872
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 165
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 165
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 165
 
 
  9341 4201 3C       		.byte	0x3c
@@ -10559,11 +9898,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  9395 426d CB1F0000 		.4byte	.LASF888
  9396 4271 18       		.byte	0x18
  9397 4272 3E       		.byte	0x3e
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 166
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 166
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 166
 
 
  9398 4273 0B       		.byte	0xb
@@ -10623,11 +9958,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  9452 42dd 09110000 		.4byte	0x1109
  9453 42e1 00       		.byte	0
  9454 42e2 18       		.uleb128 0x18
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 167
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 167
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 167
 
 
  9455 42e3 6E7300   		.ascii	"ns\000"
@@ -10687,11 +10018,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  9509 434e 08       		.uleb128 0x8
  9510 434f A7250000 		.4byte	.LASF900
  9511 4353 3E       		.byte	0x3e
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 168
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 168
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 168
 
 
  9512 4354 16       		.byte	0x16
@@ -10751,11 +10078,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  9566 43bd 18       		.uleb128 0x18
  9567 43be 6E00     		.ascii	"n\000"
  9568 43c0 3E       		.byte	0x3e
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 169
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 169
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 169
 
 
  9569 43c1 22       		.byte	0x22
@@ -10815,11 +10138,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  9623 4428 15       		.byte	0x15
  9624 4429 61420000 		.4byte	0x4261
  9625 442d 30       		.uleb128 0x30
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 170
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 170
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 170
 
 
  9626 442e DA0B0000 		.4byte	.LASF907
@@ -10879,11 +10198,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  9680 44a6 9C       		.byte	0x9c
  9681 44a7 36450000 		.4byte	0x4536
  9682 44ab 32       		.uleb128 0x32
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 171
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 171
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 171
 
 
  9683 44ac 94460000 		.4byte	0x4694
@@ -10943,11 +10258,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  9737 4524 26000000 		.4byte	.LVL69
  9738 4528 A0460000 		.4byte	0x46a0
  9739 452c 37       		.uleb128 0x37
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 172
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 172
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 172
 
 
  9740 452d 3E000000 		.4byte	.LVL72
@@ -11007,11 +10318,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  9794 45ae F9460000 		.4byte	0x46f9
  9795 45b2 3C000000 		.4byte	.LLST8
  9796 45b6 35       		.uleb128 0x35
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 173
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 173
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 173
 
 
  9797 45b7 1E000000 		.4byte	.LVL44
@@ -11071,11 +10378,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  9851 4635 3B       		.uleb128 0x3b
  9852 4636 10000000 		.4byte	.LVL35
  9853 463a 2E4C0000 		.4byte	0x4c2e
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 174
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 174
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 174
 
 
  9854 463e 48460000 		.4byte	0x4648
@@ -11135,11 +10438,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  9908 46b3 01       		.uleb128 0x1
  9909 46b4 9C       		.byte	0x9c
  9910 46b5 E9460000 		.4byte	0x46e9
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 175
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 175
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 175
 
 
  9911 46b9 3B       		.uleb128 0x3b
@@ -11199,11 +10498,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  9965 472e A74A0000 		.4byte	0x4aa7
  9966 4732 50000000 		.4byte	.LLST0
  9967 4736 3F       		.uleb128 0x3f
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 176
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 176
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 176
 
 
  9968 4737 384B0000 		.4byte	0x4b38
@@ -11263,11 +10558,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  10022 47cc 30480000 		.4byte	0x4830
  10023 47d0 42       		.uleb128 0x42
  10024 47d1 48000000 		.4byte	.Ldebug_ranges0+0x48
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 177
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 177
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 177
 
 
  10025 47d5 43       		.uleb128 0x43
@@ -11327,11 +10618,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  10079 4855 96480000 		.4byte	0x4896
  10080 4859 39       		.uleb128 0x39
  10081 485a D44A0000 		.4byte	0x4ad4
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 178
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 178
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 178
 
 
  10082 485e 0A000000 		.4byte	.LBB60
@@ -11391,11 +10678,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  10136 48cb 02       		.uleb128 0x2
  10137 48cc 08       		.byte	0x8
  10138 48cd 40       		.byte	0x40
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 179
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 179
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 179
 
 
  10139 48ce 36       		.uleb128 0x36
@@ -11455,11 +10738,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  10193 493b C4000000 		.4byte	0xc4
  10194 493f 21010000 		.4byte	.LLST11
  10195 4943 4A       		.uleb128 0x4a
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 180
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 180
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 180
 
 
  10196 4944 28050000 		.4byte	.LASF926
@@ -11519,11 +10798,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  10250 49c8 F04A0000 		.4byte	0x4af0
  10251 49cc 04000000 		.4byte	.LBB114
  10252 49d0 80000000 		.4byte	.Ldebug_ranges0+0x80
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 181
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 181
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 181
 
 
  10253 49d4 01       		.byte	0x1
@@ -11583,11 +10858,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  10307 4a52 50       		.byte	0x50
  10308 4a53 01       		.uleb128 0x1
  10309 4a54 32       		.byte	0x32
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 182
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 182
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 182
 
 
  10310 4a55 00       		.byte	0
@@ -11647,11 +10918,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  10364 4ac8 62737000 		.ascii	"bsp\000"
  10365 4acc 02       		.byte	0x2
  10366 4acd 0A01     		.2byte	0x10a
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 183
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 183
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 183
 
 
  10367 4acf B44A0000 		.4byte	0x4ab4
@@ -11711,11 +10978,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  10421 4b46 10       		.byte	0x10
  10422 4b47 CA01     		.2byte	0x1ca
  10423 4b49 03       		.byte	0x3
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 184
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 184
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 184
 
 
  10424 4b4a 53       		.uleb128 0x53
@@ -11775,11 +11038,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  10478 4bd4 36       		.uleb128 0x36
  10479 4bd5 01       		.uleb128 0x1
  10480 4bd6 50       		.byte	0x50
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 185
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 185
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 185
 
 
  10481 4bd7 01       		.uleb128 0x1
@@ -11839,11 +11098,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  10535 4c52 F1030000 		.4byte	.LASF948
  10536 4c56 11       		.byte	0x11
  10537 4c57 D8       		.byte	0xd8
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 186
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 186
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 186
 
 
  10538 4c58 56       		.uleb128 0x56
@@ -11903,11 +11158,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  10592 0006 0B       		.uleb128 0xb
  10593 0007 03       		.uleb128 0x3
  10594 0008 0E       		.uleb128 0xe
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 187
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 187
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 187
 
 
  10595 0009 1B       		.uleb128 0x1b
@@ -11967,11 +11218,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  10649 003f 00       		.byte	0
  10650 0040 49       		.uleb128 0x49
  10651 0041 13       		.uleb128 0x13
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 188
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 188
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 188
 
 
  10652 0042 00       		.byte	0
@@ -12031,11 +11278,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  10706 0078 3B       		.uleb128 0x3b
  10707 0079 05       		.uleb128 0x5
  10708 007a 49       		.uleb128 0x49
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 189
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 189
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 189
 
 
  10709 007b 13       		.uleb128 0x13
@@ -12095,11 +11338,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  10763 00b1 01       		.byte	0x1
  10764 00b2 03       		.uleb128 0x3
  10765 00b3 0E       		.uleb128 0xe
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 190
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 190
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 190
 
 
  10766 00b4 0B       		.uleb128 0xb
@@ -12159,11 +11398,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  10820 00ea 2F       		.uleb128 0x2f
  10821 00eb 0B       		.uleb128 0xb
  10822 00ec 00       		.byte	0
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 191
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 191
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 191
 
 
  10823 00ed 00       		.byte	0
@@ -12223,11 +11458,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  10877 0123 0B       		.uleb128 0xb
  10878 0124 3B       		.uleb128 0x3b
  10879 0125 0B       		.uleb128 0xb
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 192
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 192
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 192
 
 
  10880 0126 49       		.uleb128 0x49
@@ -12287,11 +11518,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  10934 015c 01       		.uleb128 0x1
  10935 015d 13       		.uleb128 0x13
  10936 015e 00       		.byte	0
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 193
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 193
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 193
 
 
  10937 015f 00       		.byte	0
@@ -12351,11 +11578,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  10991 0195 00       		.byte	0
  10992 0196 21       		.uleb128 0x21
  10993 0197 04       		.uleb128 0x4
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 194
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 194
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 194
 
 
  10994 0198 01       		.byte	0x1
@@ -12415,11 +11638,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  11048 01ce 25       		.uleb128 0x25
  11049 01cf 26       		.uleb128 0x26
  11050 01d0 00       		.byte	0
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 195
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 195
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 195
 
 
  11051 01d1 00       		.byte	0
@@ -12479,11 +11698,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  11105 0207 2A       		.uleb128 0x2a
  11106 0208 0D       		.uleb128 0xd
  11107 0209 00       		.byte	0
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 196
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 196
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 196
 
 
  11108 020a 03       		.uleb128 0x3
@@ -12543,11 +11758,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  11162 0240 2F       		.uleb128 0x2f
  11163 0241 34       		.uleb128 0x34
  11164 0242 00       		.byte	0
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 197
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 197
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 197
 
 
  11165 0243 03       		.uleb128 0x3
@@ -12607,11 +11818,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  11219 027a 00       		.byte	0
  11220 027b 00       		.byte	0
  11221 027c 32       		.uleb128 0x32
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 198
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 198
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 198
 
 
  11222 027d 1D       		.uleb128 0x1d
@@ -12671,11 +11878,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  11276 02b7 9142     		.uleb128 0x2111
  11277 02b9 18       		.uleb128 0x18
  11278 02ba 00       		.byte	0
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 199
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 199
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 199
 
 
  11279 02bb 00       		.byte	0
@@ -12735,11 +11938,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  11333 02f3 19       		.uleb128 0x19
  11334 02f4 11       		.uleb128 0x11
  11335 02f5 01       		.uleb128 0x1
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 200
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 200
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 200
 
 
  11336 02f6 12       		.uleb128 0x12
@@ -12799,11 +11998,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  11390 032f 13       		.uleb128 0x13
  11391 0330 20       		.uleb128 0x20
  11392 0331 0B       		.uleb128 0xb
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 201
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 201
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 201
 
 
  11393 0332 01       		.uleb128 0x1
@@ -12863,11 +12058,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  11447 0368 52       		.uleb128 0x52
  11448 0369 01       		.uleb128 0x1
  11449 036a 55       		.uleb128 0x55
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 202
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 202
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 202
 
 
  11450 036b 17       		.uleb128 0x17
@@ -12927,11 +12118,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  11504 03a4 27       		.uleb128 0x27
  11505 03a5 19       		.uleb128 0x19
  11506 03a6 11       		.uleb128 0x11
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 203
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 203
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 203
 
 
  11507 03a7 01       		.uleb128 0x1
@@ -12991,11 +12178,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  11561 03de 4A       		.uleb128 0x4a
  11562 03df 34       		.uleb128 0x34
  11563 03e0 00       		.byte	0
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 204
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 204
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 204
 
 
  11564 03e1 03       		.uleb128 0x3
@@ -13055,11 +12238,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  11618 0417 03       		.uleb128 0x3
  11619 0418 08       		.uleb128 0x8
  11620 0419 3A       		.uleb128 0x3a
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 205
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 205
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 205
 
 
  11621 041a 0B       		.uleb128 0xb
@@ -13119,11 +12298,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  11675 0450 00       		.byte	0
  11676 0451 00       		.byte	0
  11677 0452 52       		.uleb128 0x52
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 206
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 206
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 206
 
 
  11678 0453 34       		.uleb128 0x34
@@ -13183,11 +12358,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  11732 048a 13       		.uleb128 0x13
  11733 048b 00       		.byte	0
  11734 048c 00       		.byte	0
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 207
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 207
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 207
 
 
  11735 048d 56       		.uleb128 0x56
@@ -13247,11 +12418,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  11789 000a 35       		.byte	0x35
  11790 000b 9F       		.byte	0x9f
  11791 000c 00000000 		.4byte	0
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 208
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 208
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 208
 
 
  11792 0010 00000000 		.4byte	0
@@ -13311,11 +12478,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  11846 0098 00000000 		.4byte	open_camera_sem
  11847 009c 9F       		.byte	0x9f
  11848 009d 5C000000 		.4byte	.LVL18
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 209
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 209
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 209
 
 
  11849 00a1 62000000 		.4byte	.LVL20
@@ -13375,11 +12538,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  11903 0129 0200     		.2byte	0x2
  11904 012b 30       		.byte	0x30
  11905 012c 9F       		.byte	0x9f
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 210
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 210
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 210
 
 
  11906 012d 2A000000 		.4byte	.LVL48
@@ -13439,11 +12598,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  11960 01b6 30       		.byte	0x30
  11961 01b7 9F       		.byte	0x9f
  11962 01b8 2A000000 		.4byte	.LVL48
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 211
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 211
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 211
 
 
  11963 01bc 54000000 		.4byte	.LVL57
@@ -13503,11 +12658,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  12017 0249 9F       		.byte	0x9f
  12018 024a 00000000 		.4byte	0
  12019 024e 00000000 		.4byte	0
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 212
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 212
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 212
 
 
  12020              	.LLST4:
@@ -13567,11 +12718,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  12074 0050 00000000 		.4byte	.LFB269
  12075 0054 3C000000 		.4byte	.LFE269-.LFB269
  12076 0058 00000000 		.4byte	.LFB270
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 213
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 213
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 213
 
 
  12077 005c 28000000 		.4byte	.LFE270-.LFB270
@@ -13631,11 +12778,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  12131 00a4 38000000 		.4byte	.LBE120
  12132 00a8 7E000000 		.4byte	.LBB134
  12133 00ac 82000000 		.4byte	.LBE134
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 214
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 214
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 214
 
 
  12134 00b0 84000000 		.4byte	.LBB135
@@ -13695,11 +12838,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  12182 0009 706F7274 		.ascii	"port_intctx\000"
  12182      5F696E74 
  12182      63747800 
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 215
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 215
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 215
 
 
  12183              	.LASF202:
@@ -13759,11 +12898,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  12206      737200
  12207              	.LASF905:
  12208 00b1 76656374 		.ascii	"vect\000"
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 216
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 216
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 216
 
 
  12208      00
@@ -13823,11 +12958,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  12238      00
  12239              	.LASF874:
  12240 0139 7075626C 		.ascii	"published\000"
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 217
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 217
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 217
 
 
  12240      69736865 
@@ -13887,11 +13018,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  12272 01b3 73616D70 		.ascii	"samples\000"
  12272      6C657300 
  12273              	.LASF645:
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 218
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 218
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 218
 
 
  12274 01bb 47434346 		.ascii	"GCCFG\000"
@@ -13951,11 +13078,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  12304      6C656E00 
  12305              	.LASF87:
  12306 0246 6C6F636B 		.ascii	"lock_cnt\000"
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 219
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 219
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 219
 
 
  12306      5F636E74 
@@ -14015,11 +13138,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  12336      5F53544F 
  12336      5000
  12337              	.LASF654:
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 220
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 220
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 220
 
 
  12338 02d0 48505458 		.ascii	"HPTXSTS\000"
@@ -14079,11 +13198,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  12365              	.LASF81:
  12366 0369 63685F76 		.ascii	"ch_virtual_timers_list\000"
  12366      69727475 
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 221
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 221
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 221
 
 
  12366      616C5F74 
@@ -14143,11 +13258,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  12394      00
  12395              	.LASF157:
  12396 0406 44434D49 		.ascii	"DCMI_TypeDef\000"
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 222
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 222
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 222
 
 
  12396      5F547970 
@@ -14207,11 +13318,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  12424      56455F54 
  12424      5800
  12425              	.LASF524:
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 223
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 223
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 223
 
 
  12426 049a 72656164 		.ascii	"read\000"
@@ -14271,11 +13378,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  12454      656C5F73 
  12454      74617473 
  12454      5F7400
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 224
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 224
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 224
 
 
  12455              	.LASF926:
@@ -14335,11 +13438,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  12480      66665F6F 
  12480      6C646572 
  12480      00
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 225
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 225
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 225
 
 
  12481              	.LASF24:
@@ -14399,11 +13498,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  12509              	.LASF608:
  12510 0649 75736272 		.ascii	"usbreqhandler_t\000"
  12510      65716861 
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 226
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 226
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 226
 
 
  12510      6E646C65 
@@ -14463,11 +13558,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  12538 06db 76617269 		.ascii	"variable_reference_right\000"
  12538      61626C65 
  12538      5F726566 
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 227
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 227
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 227
 
 
  12538      6572656E 
@@ -14527,11 +13618,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  12567              	.LASF186:
  12568 0772 49325350 		.ascii	"I2SPR\000"
  12568      5200
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 228
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 228
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 228
 
 
  12569              	.LASF495:
@@ -14591,11 +13678,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  12596              	.LASF9:
  12597 0820 5F5F7569 		.ascii	"__uint16_t\000"
  12597      6E743136 
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 229
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 229
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 229
 
 
  12597      5F7400
@@ -14655,11 +13738,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  12623      63655F66 
  12623      726F6E74 
  12624              	.LASF867:
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 230
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 230
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 230
 
 
  12625 08bf 6F707472 		.ascii	"optreset\000"
@@ -14719,11 +13798,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  12653 0945 7478646D 		.ascii	"txdmamode\000"
  12653      616D6F64 
  12653      6500
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 231
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 231
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 231
 
 
  12654              	.LASF902:
@@ -14783,11 +13858,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  12680              	.LASF6:
  12681 09de 756E7369 		.ascii	"unsigned char\000"
  12681      676E6564 
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 232
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 232
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 232
 
 
  12681      20636861 
@@ -14847,11 +13918,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  12709      495400
  12710              	.LASF371:
  12711 0a6e 43414E5F 		.ascii	"CAN_SLEEP\000"
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 233
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 233
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 233
 
 
  12711      534C4545 
@@ -14911,11 +13978,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  12742              	.LASF911:
  12743 0af2 7761436F 		.ascii	"waControle\000"
  12743      6E74726F 
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 234
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 234
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 234
 
 
  12743      6C6500
@@ -14975,11 +14038,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  12773 0b77 50414C43 		.ascii	"PALConfig\000"
  12773      6F6E6669 
  12773      6700
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 235
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 235
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 235
 
 
  12774              	.LASF693:
@@ -15039,11 +14098,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  12799 0c0d 72786275 		.ascii	"rxbuf\000"
  12799      6600
  12800              	.LASF636:
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 236
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 236
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 236
 
 
  12801 0c13 47494E54 		.ascii	"GINTSTS\000"
@@ -15103,11 +14158,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  12829      6D7300
  12830              	.LASF196:
  12831 0ca0 73655F77 		.ascii	"se_wtobjp\000"
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 237
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 237
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 237
 
 
  12831      746F626A 
@@ -15167,11 +14218,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  12859 0d28 6F6C645F 		.ascii	"old_ref_right\000"
  12859      7265665F 
  12859      72696768 
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 238
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 238
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 238
 
 
  12859      7400
@@ -15231,11 +14278,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  12890              	.LASF4:
  12891 0db8 73697A65 		.ascii	"size_t\000"
  12891      5F7400
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 239
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 239
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 239
 
 
  12892              	.LASF94:
@@ -15295,11 +14338,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  12920              	.LASF856:
  12921 0e4f 64636D69 		.ascii	"dcmicallback_t\000"
  12921      63616C6C 
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 240
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 240
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 240
 
 
  12921      6261636B 
@@ -15359,11 +14398,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  12949      00
  12950              	.LASF122:
  12951 0eea 52463052 		.ascii	"RF0R\000"
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 241
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 241
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 241
 
 
  12951      00
@@ -15423,11 +14458,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  12978              	.LASF522:
  12979 0f80 53657269 		.ascii	"SerialDriverVMT\000"
  12979      616C4472 
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 242
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 242
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 242
 
 
  12979      69766572 
@@ -15487,11 +14518,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  13005      372E322E 
  13005      31203230 
  13005      31373039 
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 243
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 243
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 243
 
 
  13006 1046 616E6368 		.ascii	"anch revision 255204] -mcpu=cortex-m4 -mfloat-abi=h"
@@ -15551,11 +14578,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  13024              	.LASF752:
  13025 1195 5F5F746D 		.ascii	"__tm_mday\000"
  13025      5F6D6461 
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 244
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 244
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 244
 
 
  13025      7900
@@ -15615,11 +14638,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  13053 1231 705F7072 		.ascii	"p_prio\000"
  13053      696F00
  13054              	.LASF896:
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 245
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 245
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 245
 
 
  13055 1238 64656669 		.ascii	"defined\000"
@@ -15679,11 +14698,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  13081      5F7400
  13082              	.LASF773:
  13083 12d3 5F636F6F 		.ascii	"_cookie\000"
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 246
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 246
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 246
 
 
  13083      6B696500 
@@ -15743,11 +14758,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  13110              	.LASF622:
  13111 1369 72657376 		.ascii	"resvdC\000"
  13111      644300
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 247
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 247
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 247
 
 
  13112              	.LASF509:
@@ -15807,11 +14818,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  13141 13f8 746D6F64 		.ascii	"tmode_t\000"
  13141      655F7400 
  13142              	.LASF851:
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 248
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 248
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 248
 
 
  13143 1400 44434D49 		.ascii	"DCMI_ERROR\000"
@@ -15871,11 +14878,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  13169      4448524D 
  13169      5F313242 
  13169      49545F4C 
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 249
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 249
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 249
 
 
  13169      45465400 
@@ -15935,11 +14938,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  13199      4556454E 
  13199      545F5354 
  13199      414C4C45 
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 250
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 250
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 250
 
 
  13199      4400
@@ -15999,11 +14998,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  13227      745F736F 
  13227      75726365 
  13227      5F7400
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 251
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 251
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 251
 
 
  13228              	.LASF649:
@@ -16063,11 +15058,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  13255      68617200 
  13256              	.LASF893:
  13257 1658 70617261 		.ascii	"parameter_t\000"
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 252
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 252
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 252
 
 
  13257      6D657465 
@@ -16127,11 +15118,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  13284              	.LASF557:
  13285 16e9 73706963 		.ascii	"spicallback_t\000"
  13285      616C6C62 
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 253
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 253
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 253
 
 
  13285      61636B5F 
@@ -16191,11 +15178,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  13311 1787 4441435F 		.ascii	"DAC_ACTIVE\000"
  13311      41435449 
  13311      564500
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 254
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 254
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 254
 
 
  13312              	.LASF341:
@@ -16255,11 +15238,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  13343      655F6275 
  13343      66666572 
  13343      00
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 255
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 255
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 255
 
 
  13344              	.LASF826:
@@ -16319,11 +15298,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  13368              	.LASF899:
  13369 18b0 5F706172 		.ascii	"_param_val_str_s\000"
  13369      616D5F76 
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 256
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 256
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 256
 
 
  13369      616C5F73 
@@ -16383,11 +15358,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  13398              	.LASF682:
  13399 193e 72657376 		.ascii	"resvdE04\000"
  13399      64453034 
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 257
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 257
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 257
 
 
  13399      00
@@ -16447,11 +15418,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  13428              	.LASF811:
  13429 19d2 5F696F62 		.ascii	"_iobs\000"
  13429      7300
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 258
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 258
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 258
 
 
  13430              	.LASF561:
@@ -16511,11 +15478,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  13462              	.LASF745:
  13463 1a55 5F6D6178 		.ascii	"_maxwds\000"
  13463      77647300 
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 259
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 259
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 259
 
 
  13464              	.LASF292:
@@ -16575,11 +15538,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  13491 1ae6 706D6E65 		.ascii	"pmnext\000"
  13491      787400
  13492              	.LASF483:
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 260
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 260
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 260
 
 
  13493 1aed 4932535F 		.ascii	"I2S_ACTIVE\000"
@@ -16639,11 +15598,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  13519      6C6C5F65 
  13519      76656E74 
  13519      00
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 261
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 261
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 261
 
 
  13520              	.LASF601:
@@ -16703,11 +15658,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  13549 1c17 73796E63 		.ascii	"sync\000"
  13549      00
  13550              	.LASF521:
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 262
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 262
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 262
 
 
  13551 1c1c 75736172 		.ascii	"usart\000"
@@ -16767,11 +15718,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  13577      00
  13578              	.LASF315:
  13579 1cb8 73746D33 		.ascii	"stm32_gpio_setup_t\000"
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 263
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 263
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 263
 
 
  13579      325F6770 
@@ -16831,11 +15778,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  13603 1d57 636E745F 		.ascii	"cnt_t\000"
  13603      7400
  13604              	.LASF416:
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 264
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 264
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 264
 
 
  13605 1d5d 65787473 		.ascii	"extstate_t\000"
@@ -16895,11 +15838,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  13632              	.LASF342:
  13633 1df1 636F6E66 		.ascii	"config\000"
  13633      696700
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 265
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 265
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 265
 
 
  13634              	.LASF450:
@@ -16959,11 +15898,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  13660              	.LASF403:
  13661 1e92 4441435F 		.ascii	"DAC_DHRM_12BIT_RIGHT\000"
  13661      4448524D 
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 266
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 266
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 266
 
 
  13661      5F313242 
@@ -17023,11 +15958,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  13687 1f2d 6368616E 		.ascii	"changed\000"
  13687      67656400 
  13688              	.LASF740:
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 267
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 267
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 267
 
 
  13689 1f35 5F6D6273 		.ascii	"_mbstate_t\000"
@@ -17087,11 +16018,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  13715      6F6E6669 
  13715      6700
  13716              	.LASF888:
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 268
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 268
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 268
 
 
  13717 1fcb 70617261 		.ascii	"parameter_namespace_s\000"
@@ -17151,11 +16078,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  13744              	.LASF875:
  13745 205e 77617463 		.ascii	"watchers\000"
  13745      68657273 
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 269
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 269
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 269
 
 
  13745      00
@@ -17215,11 +16138,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  13773      64656661 
  13773      756C745F 
  13773      636F6E66 
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 270
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 270
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 270
 
 
  13773      696700
@@ -17279,11 +16198,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  13801      6720756E 
  13801      7369676E 
  13801      65642069 
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 271
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 271
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 271
 
 
  13802              	.LASF181:
@@ -17343,11 +16258,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  13829 2231 76745F66 		.ascii	"vt_func\000"
  13829      756E6300 
  13830              	.LASF434:
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 272
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 272
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 272
 
 
  13831 2239 534D4352 		.ascii	"SMCR\000"
@@ -17407,11 +16318,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  13859 22c2 4441494E 		.ascii	"DAINT\000"
  13859      5400
  13860              	.LASF560:
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 273
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 273
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 273
 
 
  13861 22c8 53504943 		.ascii	"SPIConfig\000"
@@ -17471,11 +16378,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  13887      00
  13888              	.LASF110:
  13889 2358 4A445233 		.ascii	"JDR3\000"
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 274
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 274
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 274
 
 
  13889      00
@@ -17535,11 +16438,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  13917 23e2 4441435F 		.ascii	"DAC_STOP\000"
  13917      53544F50 
  13917      00
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 275
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 275
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 275
 
 
  13918              	.LASF660:
@@ -17599,11 +16498,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  13945 2476 5F666C61 		.ascii	"_flags2\000"
  13945      67733200 
  13946              	.LASF835:
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 276
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 276
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 276
 
 
  13947 247e 5F6E6578 		.ascii	"_nextf\000"
@@ -17663,11 +16558,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  13973 250c 53444344 		.ascii	"SDCDriverVMT\000"
  13973      72697665 
  13973      72564D54 
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 277
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 277
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 277
 
 
  13973      00
@@ -17727,11 +16618,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  14000              	.LASF900:
  14001 25a7 6275665F 		.ascii	"buf_len\000"
  14001      6C656E00 
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 278
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 278
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 278
 
 
  14002              	.LASF58:
@@ -17791,11 +16678,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  14027 264a 46415354 		.ascii	"FAST_DUTY_CYCLE_2\000"
  14027      5F445554 
  14027      595F4359 
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 279
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 279
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 279
 
 
  14027      434C455F 
@@ -17855,11 +16738,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  14059 26cb 6932636F 		.ascii	"i2copmode_t\000"
  14059      706D6F64 
  14059      655F7400 
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 280
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 280
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 280
 
 
  14060              	.LASF252:
@@ -17919,11 +16798,7 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  14088              	.LASF493:
  14089 2764 49325343 		.ascii	"I2SConfig\000"
  14089      6F6E6669 
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 281
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 281
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 281
 
 
  14089      6700
@@ -17973,136 +16848,70 @@ ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 1
  14115      74617465 
  14115      5F7400
  14116              		.ident	"GCC: (GNU Tools for Arm Embedded Processors 7-2017-q4-major) 7.2.1 20170904 (release) [ARM
-<<<<<<< HEAD
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 282
-=======
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 282
->>>>>>> balt
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 282
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 controle.c
-<<<<<<< HEAD
-C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s:18     .text.controle_start:00000000 $t
-C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s:26     .text.controle_start:00000000 controle_start
-C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s:74     .text.controle_start:0000002c $d
-C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s:863    .text.Controle:00000000 Controle
-C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s:81     .text.wait_semaphore_ready:00000000 $t
-C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s:89     .text.wait_semaphore_ready:00000000 wait_semaphore_ready
-C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s:136    .text.wait_semaphore_ready:00000024 $d
-C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s:144    .text.semaphore_ready:00000000 $t
-C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s:152    .text.semaphore_ready:00000000 semaphore_ready
-C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s:298    .text.semaphore_ready:00000068 $d
-C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s:306    .text.get_free_space:00000000 $t
-C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s:314    .text.get_free_space:00000000 get_free_space
-C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s:355    .text.get_free_space:00000028 $d
-C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s:360    .text.get_free_space_front:00000000 $t
-C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s:368    .text.get_free_space_front:00000000 get_free_space_front
-C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s:417    .text.get_free_space_front:00000034 $d
-C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s:422    .text.get_free_space_left:00000000 $t
-C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s:430    .text.get_free_space_left:00000000 get_free_space_left
-C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s:476    .text.get_free_space_left:00000028 $d
-C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s:481    .text.get_free_space_right:00000000 $t
-C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s:489    .text.get_free_space_right:00000000 get_free_space_right
-C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s:535    .text.get_free_space_right:00000028 $d
-C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s:540    .text.get_direction_changed:00000000 $t
-C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s:548    .text.get_direction_changed:00000000 get_direction_changed
-C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s:585    .text.get_direction_changed:00000020 $d
-C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s:591    .text.do_new_reference:00000000 $t
-C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s:599    .text.do_new_reference:00000000 do_new_reference
-C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s:647    .text.do_new_reference:00000030 $d
-C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s:654    .text.get_reference_right:00000000 $t
-C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s:662    .text.get_reference_right:00000000 get_reference_right
-C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s:699    .text.get_reference_right:00000020 $d
-C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s:705    .text.get_reference_left:00000000 $t
-C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s:713    .text.get_reference_left:00000000 get_reference_left
-C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s:750    .text.get_reference_left:00000020 $d
-C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s:756    .text.get_possible_directions:00000000 $t
-C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s:764    .text.get_possible_directions:00000000 get_possible_directions
-C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s:851    .text.get_possible_directions:00000040 $d
-C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s:856    .text.Controle:00000000 $t
-C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s:1065   .text.Controle:000000bc $d
-C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s:1075   .text.get_wall_position:00000000 $t
-C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s:1083   .text.get_wall_position:00000000 get_wall_position
-C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s:1157   .text.get_wall_position:00000040 $d
-C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s:1165   .bss.available_dir_changed:00000000 available_dir_changed
-C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s:1166   .bss.available_dir_changed:00000000 $d
-C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s:1168   .bss.variable_reference_left:00000000 $d
-C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s:1172   .bss.variable_reference_left:00000000 variable_reference_left
-C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s:1175   .bss.variable_reference_right:00000000 $d
-C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s:1179   .bss.variable_reference_right:00000000 variable_reference_right
-C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s:1182   .bss.waControle:00000000 $d
-C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s:1186   .bss.waControle:00000000 waControle
-C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s:1189   .data.open_camera_sem:00000000 $d
-C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s:1193   .data.open_camera_sem:00000000 open_camera_sem
-C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s:1198   .rodata.__FUNCTION__.12089:00000000 $d
-C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s:1202   .rodata.__FUNCTION__.12089:00000000 __FUNCTION__.12089
-C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s:1205   .rodata.__func__.7153:00000000 $d
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s 			page 283
+C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s:18     .text.controle_start:00000000 $t
+C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s:26     .text.controle_start:00000000 controle_start
+C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s:74     .text.controle_start:0000002c $d
+C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s:863    .text.Controle:00000000 Controle
+C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s:81     .text.wait_semaphore_ready:00000000 $t
+C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s:89     .text.wait_semaphore_ready:00000000 wait_semaphore_ready
+C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s:136    .text.wait_semaphore_ready:00000024 $d
+C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s:144    .text.semaphore_ready:00000000 $t
+C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s:152    .text.semaphore_ready:00000000 semaphore_ready
+C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s:298    .text.semaphore_ready:00000068 $d
+C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s:306    .text.get_free_space:00000000 $t
+C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s:314    .text.get_free_space:00000000 get_free_space
+C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s:355    .text.get_free_space:00000028 $d
+C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s:360    .text.get_free_space_front:00000000 $t
+C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s:368    .text.get_free_space_front:00000000 get_free_space_front
+C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s:417    .text.get_free_space_front:00000034 $d
+C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s:422    .text.get_free_space_left:00000000 $t
+C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s:430    .text.get_free_space_left:00000000 get_free_space_left
+C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s:476    .text.get_free_space_left:00000028 $d
+C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s:481    .text.get_free_space_right:00000000 $t
+C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s:489    .text.get_free_space_right:00000000 get_free_space_right
+C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s:535    .text.get_free_space_right:00000028 $d
+C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s:540    .text.get_direction_changed:00000000 $t
+C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s:548    .text.get_direction_changed:00000000 get_direction_changed
+C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s:585    .text.get_direction_changed:00000020 $d
+C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s:591    .text.do_new_reference:00000000 $t
+C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s:599    .text.do_new_reference:00000000 do_new_reference
+C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s:647    .text.do_new_reference:00000030 $d
+C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s:654    .text.get_reference_right:00000000 $t
+C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s:662    .text.get_reference_right:00000000 get_reference_right
+C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s:699    .text.get_reference_right:00000020 $d
+C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s:705    .text.get_reference_left:00000000 $t
+C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s:713    .text.get_reference_left:00000000 get_reference_left
+C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s:750    .text.get_reference_left:00000020 $d
+C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s:756    .text.get_possible_directions:00000000 $t
+C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s:764    .text.get_possible_directions:00000000 get_possible_directions
+C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s:851    .text.get_possible_directions:00000040 $d
+C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s:856    .text.Controle:00000000 $t
+C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s:1065   .text.Controle:000000bc $d
+C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s:1075   .text.get_wall_position:00000000 $t
+C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s:1083   .text.get_wall_position:00000000 get_wall_position
+C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s:1157   .text.get_wall_position:00000040 $d
+C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s:1165   .bss.available_dir_changed:00000000 available_dir_changed
+C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s:1166   .bss.available_dir_changed:00000000 $d
+C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s:1168   .bss.variable_reference_left:00000000 $d
+C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s:1172   .bss.variable_reference_left:00000000 variable_reference_left
+C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s:1175   .bss.variable_reference_right:00000000 $d
+C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s:1179   .bss.variable_reference_right:00000000 variable_reference_right
+C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s:1182   .bss.waControle:00000000 $d
+C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s:1186   .bss.waControle:00000000 waControle
+C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s:1189   .data.open_camera_sem:00000000 $d
+C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s:1193   .data.open_camera_sem:00000000 open_camera_sem
+C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s:1198   .rodata.__FUNCTION__.12089:00000000 $d
+C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s:1202   .rodata.__FUNCTION__.12089:00000000 __FUNCTION__.12089
+C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s:1205   .rodata.__func__.7153:00000000 $d
+ARM GAS  C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s 			page 283
 
 
-C:\Users\balth\AppData\Local\Temp\ccFHsYoW.s:1209   .rodata.__func__.7153:00000000 __func__.7153
-=======
-C:\Users\balth\AppData\Local\Temp\ccviMw0m.s:18     .text.controle_start:00000000 $t
-C:\Users\balth\AppData\Local\Temp\ccviMw0m.s:26     .text.controle_start:00000000 controle_start
-C:\Users\balth\AppData\Local\Temp\ccviMw0m.s:74     .text.controle_start:0000002c $d
-C:\Users\balth\AppData\Local\Temp\ccviMw0m.s:863    .text.Controle:00000000 Controle
-C:\Users\balth\AppData\Local\Temp\ccviMw0m.s:81     .text.wait_semaphore_ready:00000000 $t
-C:\Users\balth\AppData\Local\Temp\ccviMw0m.s:89     .text.wait_semaphore_ready:00000000 wait_semaphore_ready
-C:\Users\balth\AppData\Local\Temp\ccviMw0m.s:136    .text.wait_semaphore_ready:00000024 $d
-C:\Users\balth\AppData\Local\Temp\ccviMw0m.s:144    .text.semaphore_ready:00000000 $t
-C:\Users\balth\AppData\Local\Temp\ccviMw0m.s:152    .text.semaphore_ready:00000000 semaphore_ready
-C:\Users\balth\AppData\Local\Temp\ccviMw0m.s:298    .text.semaphore_ready:00000068 $d
-C:\Users\balth\AppData\Local\Temp\ccviMw0m.s:306    .text.get_free_space:00000000 $t
-C:\Users\balth\AppData\Local\Temp\ccviMw0m.s:314    .text.get_free_space:00000000 get_free_space
-C:\Users\balth\AppData\Local\Temp\ccviMw0m.s:355    .text.get_free_space:00000028 $d
-C:\Users\balth\AppData\Local\Temp\ccviMw0m.s:360    .text.get_free_space_front:00000000 $t
-C:\Users\balth\AppData\Local\Temp\ccviMw0m.s:368    .text.get_free_space_front:00000000 get_free_space_front
-C:\Users\balth\AppData\Local\Temp\ccviMw0m.s:417    .text.get_free_space_front:00000034 $d
-C:\Users\balth\AppData\Local\Temp\ccviMw0m.s:422    .text.get_free_space_left:00000000 $t
-C:\Users\balth\AppData\Local\Temp\ccviMw0m.s:430    .text.get_free_space_left:00000000 get_free_space_left
-C:\Users\balth\AppData\Local\Temp\ccviMw0m.s:476    .text.get_free_space_left:00000028 $d
-C:\Users\balth\AppData\Local\Temp\ccviMw0m.s:481    .text.get_free_space_right:00000000 $t
-C:\Users\balth\AppData\Local\Temp\ccviMw0m.s:489    .text.get_free_space_right:00000000 get_free_space_right
-C:\Users\balth\AppData\Local\Temp\ccviMw0m.s:535    .text.get_free_space_right:00000028 $d
-C:\Users\balth\AppData\Local\Temp\ccviMw0m.s:540    .text.get_direction_changed:00000000 $t
-C:\Users\balth\AppData\Local\Temp\ccviMw0m.s:548    .text.get_direction_changed:00000000 get_direction_changed
-C:\Users\balth\AppData\Local\Temp\ccviMw0m.s:585    .text.get_direction_changed:00000020 $d
-C:\Users\balth\AppData\Local\Temp\ccviMw0m.s:591    .text.do_new_reference:00000000 $t
-C:\Users\balth\AppData\Local\Temp\ccviMw0m.s:599    .text.do_new_reference:00000000 do_new_reference
-C:\Users\balth\AppData\Local\Temp\ccviMw0m.s:647    .text.do_new_reference:00000030 $d
-C:\Users\balth\AppData\Local\Temp\ccviMw0m.s:654    .text.get_reference_right:00000000 $t
-C:\Users\balth\AppData\Local\Temp\ccviMw0m.s:662    .text.get_reference_right:00000000 get_reference_right
-C:\Users\balth\AppData\Local\Temp\ccviMw0m.s:699    .text.get_reference_right:00000020 $d
-C:\Users\balth\AppData\Local\Temp\ccviMw0m.s:705    .text.get_reference_left:00000000 $t
-C:\Users\balth\AppData\Local\Temp\ccviMw0m.s:713    .text.get_reference_left:00000000 get_reference_left
-C:\Users\balth\AppData\Local\Temp\ccviMw0m.s:750    .text.get_reference_left:00000020 $d
-C:\Users\balth\AppData\Local\Temp\ccviMw0m.s:756    .text.get_possible_directions:00000000 $t
-C:\Users\balth\AppData\Local\Temp\ccviMw0m.s:764    .text.get_possible_directions:00000000 get_possible_directions
-C:\Users\balth\AppData\Local\Temp\ccviMw0m.s:851    .text.get_possible_directions:00000040 $d
-C:\Users\balth\AppData\Local\Temp\ccviMw0m.s:856    .text.Controle:00000000 $t
-C:\Users\balth\AppData\Local\Temp\ccviMw0m.s:1065   .text.Controle:000000bc $d
-C:\Users\balth\AppData\Local\Temp\ccviMw0m.s:1075   .text.get_wall_position:00000000 $t
-C:\Users\balth\AppData\Local\Temp\ccviMw0m.s:1083   .text.get_wall_position:00000000 get_wall_position
-C:\Users\balth\AppData\Local\Temp\ccviMw0m.s:1157   .text.get_wall_position:00000040 $d
-C:\Users\balth\AppData\Local\Temp\ccviMw0m.s:1165   .bss.available_dir_changed:00000000 available_dir_changed
-C:\Users\balth\AppData\Local\Temp\ccviMw0m.s:1166   .bss.available_dir_changed:00000000 $d
-C:\Users\balth\AppData\Local\Temp\ccviMw0m.s:1168   .bss.variable_reference_left:00000000 $d
-C:\Users\balth\AppData\Local\Temp\ccviMw0m.s:1172   .bss.variable_reference_left:00000000 variable_reference_left
-C:\Users\balth\AppData\Local\Temp\ccviMw0m.s:1175   .bss.variable_reference_right:00000000 $d
-C:\Users\balth\AppData\Local\Temp\ccviMw0m.s:1179   .bss.variable_reference_right:00000000 variable_reference_right
-C:\Users\balth\AppData\Local\Temp\ccviMw0m.s:1182   .bss.waControle:00000000 $d
-C:\Users\balth\AppData\Local\Temp\ccviMw0m.s:1186   .bss.waControle:00000000 waControle
-C:\Users\balth\AppData\Local\Temp\ccviMw0m.s:1189   .data.open_camera_sem:00000000 $d
-C:\Users\balth\AppData\Local\Temp\ccviMw0m.s:1193   .data.open_camera_sem:00000000 open_camera_sem
-C:\Users\balth\AppData\Local\Temp\ccviMw0m.s:1198   .rodata.__FUNCTION__.12089:00000000 $d
-C:\Users\balth\AppData\Local\Temp\ccviMw0m.s:1202   .rodata.__FUNCTION__.12089:00000000 __FUNCTION__.12089
-C:\Users\balth\AppData\Local\Temp\ccviMw0m.s:1205   .rodata.__func__.7153:00000000 $d
-ARM GAS  C:\Users\balth\AppData\Local\Temp\ccviMw0m.s 			page 283
-
-
-C:\Users\balth\AppData\Local\Temp\ccviMw0m.s:1209   .rodata.__func__.7153:00000000 __func__.7153
->>>>>>> balt
+C:\Users\balth\AppData\Local\Temp\ccEKrA6g.s:1209   .rodata.__func__.7153:00000000 __func__.7153
 
 UNDEFINED SYMBOLS
 chThdCreateStatic
