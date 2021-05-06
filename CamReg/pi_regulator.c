@@ -30,8 +30,9 @@ static THD_FUNCTION(PiRegulator, arg) {
 	while(1){
 		time = chVTGetSystemTime();
 		// if one direction possible, go in that direction while following the right wall
-		//chprintf((BaseSequentialStream *) &SDU1, " directions possibles =%d direction changed = %d\n",get_possible_directions(),get_direction_changed());
+		chprintf((BaseSequentialStream *) &SDU1, " directions possibles =%d direction changed = %d\n",get_possible_directions(),get_direction_changed());
 		//follow_wall(SENSORRIGHT);
+
 		if(get_possible_directions()==1){
 
 			if(get_direction_changed()==0){
@@ -47,13 +48,13 @@ static THD_FUNCTION(PiRegulator, arg) {
 
 				if(get_free_space_left()==1){
 					// turn 90° counterclockwise
-					chprintf((BaseSequentialStream *) &SDU1, "dans turn ccw\n");
+					//chprintf((BaseSequentialStream *) &SDU1, "dans turn ccw\n");
 					turn_counterclockwise();
 				}
 
 				else if(get_free_space_right()==1){
 					//turn 90° clockwise
-					chprintf((BaseSequentialStream *) &SDU1, "dans turn cw\n");
+					//chprintf((BaseSequentialStream *) &SDU1, "dans turn cw\n");
 					turn_clockwise();
 				}
 
@@ -65,7 +66,7 @@ static THD_FUNCTION(PiRegulator, arg) {
 				//do_new_reference();
 			}
 		}
-		else if (get_possible_directions()==2 && start){
+		else if (get_possible_directions()==2){
 			//reset motor psoition
 			right_motor_set_pos(0);
 			left_motor_set_pos(0);
@@ -73,17 +74,17 @@ static THD_FUNCTION(PiRegulator, arg) {
 			switch(wall_position){
 			case FRONT:
 				//open camera
-				chprintf((BaseSequentialStream *) &SDU1, "dans open camera\n");
+				//chprintf((BaseSequentialStream *) &SDU1, "dans open camera\n");
 				break;
 			case LEFT:{
 				// turn towards the wall and open camera
-				chprintf((BaseSequentialStream *) &SDU1, "dans LEFT\n");
+				//chprintf((BaseSequentialStream *) &SDU1, "dans LEFT\n");
 				turn_counterclockwise();
 			}
 			break;
 			case RIGHT:{
 				// turn towards the wall and open camera
-				chprintf((BaseSequentialStream *) &SDU1, "dans RIGHT\n");
+				//chprintf((BaseSequentialStream *) &SDU1, "dans RIGHT\n");
 				turn_clockwise();
 
 			}

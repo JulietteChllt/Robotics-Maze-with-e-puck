@@ -67,7 +67,7 @@ int main(void)
 	controle_start();
 
 	//stars the threads for the pi regulator and the processing of the image
-	//process_image_start();
+	process_image_start();
 	pi_regulator_start();
 
 
