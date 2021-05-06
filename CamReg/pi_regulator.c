@@ -65,7 +65,7 @@ static THD_FUNCTION(PiRegulator, arg) {
 				//do_new_reference();
 			}
 		}
-		else if (get_possible_directions()==2 && start){
+		else if (get_possible_directions()==2){
 			//reset motor psoition
 			right_motor_set_pos(0);
 			left_motor_set_pos(0);
