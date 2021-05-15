@@ -15,8 +15,6 @@ extern "C" {
 #define CODE_BLUE			1
 #define CODE_GREEN			2
 #define CODE_RED			3
-#define RIGHT			2
-#define LEFT			1
 
 
 

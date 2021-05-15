@@ -13,6 +13,7 @@
 #include <process_image.h>
 #include <controle.h>
 #include "motor_regulator.h"
+#include "spi_comm.h"
 
 messagebus_t bus;
 MUTEX_DECL (bus_lock);
@@ -60,6 +61,7 @@ int main(void)
 	proximity_start();
 	calibrate_ir(); //premi�re calibration
 
+	spi_comm_start();
 	//stars the threads for the control thread
 	controle_start();
 

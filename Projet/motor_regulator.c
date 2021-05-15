@@ -46,14 +46,17 @@ static THD_FUNCTION(MotorRegulator, arg) {
 			semaphore_ready();
 			move_forward_smallstep();
 			if(get_color()==CODE_GREEN){
-				set_body_led(1);
+				set_rgb_led(LED2,0,100,0);
+				set_rgb_led(LED4,0,100,0);
+				set_rgb_led(LED6,0,100,0);
+				set_rgb_led(LED8,0,100,0);
 				end=1;
 			}
 			else{
-				set_led(LED1,0);
-				set_led(LED3,0);
-				set_led(LED5,0);
-				set_led(LED7,0);
+				set_rgb_led(LED2,0,100,0);
+				set_rgb_led(LED4,0,100,0);
+				set_rgb_led(LED6,0,100,0);
+				set_rgb_led(LED8,0,100,0);
 			}
 		}
 
@@ -63,7 +66,7 @@ static THD_FUNCTION(MotorRegulator, arg) {
 		 * - the robot can only go right : same as above
 		 * Remark : the small steps forward allow the robot to be in the right position to either turn or simply do the reference
 		 */
-		if(get_possible_directions()==1){
+		if(nb_possible_direction==1){
 
 			if(get_free_space_front()==1 && get_direction_changed()==0){
 				prev_err = follow_wall(prev_err);
@@ -158,7 +161,7 @@ static THD_FUNCTION(MotorRegulator, arg) {
 				else{
 					turn_counterclockwise();
 					move_forward_smallstep();
-					move_forward_smallstep();
+					//move_forward_smallstep();
 				}
 				move_forward_smallstep();
 				if(!get_free_space_right())

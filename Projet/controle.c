@@ -2,6 +2,7 @@
 #include "hal.h"
 #include <usbcfg.h>
 #include "stdio.h"
+#include "chprintf.h"
 #include <main.h>
 #include "sensors/proximity.h"
 #include "controle.h"
@@ -46,6 +47,7 @@ static THD_FUNCTION(Controle, arg){
 		prev_left = new_left;
 		prev_right = new_right;
 
+		//chprintf((BaseSequentialStream *) &SDU1, "dir possibible =%d front =%d left=%d right=%d\n",get_possible_directions(),new_front,new_left,new_right);
 		chThdSleepMilliseconds(5);
 	}
 }
