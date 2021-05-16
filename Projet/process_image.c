@@ -106,7 +106,7 @@ uint8_t avg_color(uint8_t* image_color){
 }
 
 uint8_t determine_color(uint8_t avg_red, uint8_t avg_green, uint8_t avg_blue){
-	if(avg_blue>avg_green && avg_blue> avg_red)
+	if(avg_blue>avg_green && avg_blue>= avg_red)
 		return CODE_BLUE;
 	else if (avg_green>avg_blue && avg_green>avg_red)
 		return CODE_GREEN;
@@ -119,7 +119,7 @@ return color;
 }
 
 uint8_t determine_direction(uint8_t avg_red, uint8_t avg_blue){
-	if(avg_blue > avg_red)
+	if(avg_blue >= avg_red)
 		return CODE_BLUE;
 	else
 		return CODE_RED;

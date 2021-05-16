@@ -45,17 +45,18 @@ static THD_FUNCTION(MotorRegulator, arg) {
 			semaphore_ready();
 			move_forward_smallstep();
 			if(get_color()==CODE_GREEN){
-				set_rgb_led(LED2,0,100,0);
-				set_rgb_led(LED4,0,100,0);
-				set_rgb_led(LED6,0,100,0);
-				set_rgb_led(LED8,0,100,0);
+				set_rgb_led(LED2,0,255,0);
+				set_rgb_led(LED4,0,255,0);
+				set_rgb_led(LED6,0,255,0);
+				set_rgb_led(LED8,0,255,0);
 				end=1;
 			}
 			else{
-				set_rgb_led(LED2,100,0,0);
-				set_rgb_led(LED4,100,0,0);
-				set_rgb_led(LED6,100,0,0);
-				set_rgb_led(LED8,100,0,0);
+				set_rgb_led(LED2,255,0,0);
+				set_rgb_led(LED4,255,0,0);
+				set_rgb_led(LED6,255,0,0);
+				set_rgb_led(LED8,255,0,0);
+
 			}
 		}
 
