@@ -147,6 +147,7 @@ static THD_FUNCTION(MotorRegulator, arg) {
 					turn_clockwise();
 					move_backward_smallstep();
 					semaphore_ready();
+					move_forward_smallstep();
 					switch(get_direction()){
 					case CODE_RED :
 						turn_counterclockwise();
