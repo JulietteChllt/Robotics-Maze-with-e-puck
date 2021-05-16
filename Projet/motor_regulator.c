@@ -52,10 +52,10 @@ static THD_FUNCTION(MotorRegulator, arg) {
 				end=1;
 			}
 			else{
-				set_rgb_led(LED2,0,100,0);
-				set_rgb_led(LED4,0,100,0);
-				set_rgb_led(LED6,0,100,0);
-				set_rgb_led(LED8,0,100,0);
+				set_rgb_led(LED2,100,0,0);
+				set_rgb_led(LED4,100,0,0);
+				set_rgb_led(LED6,100,0,0);
+				set_rgb_led(LED8,100,0,0);
 			}
 		}
 
@@ -161,7 +161,6 @@ static THD_FUNCTION(MotorRegulator, arg) {
 				else{
 					turn_counterclockwise();
 					move_forward_smallstep();
-					//move_forward_smallstep();
 				}
 				move_forward_smallstep();
 				if(!get_free_space_right())
@@ -169,7 +168,7 @@ static THD_FUNCTION(MotorRegulator, arg) {
 			}
 		}
 
-		//100Hz
+		//1kHz
 		chThdSleepUntilWindowed(time, time + MS2ST(1));
 	}
 }
@@ -188,7 +187,8 @@ void follow_wall(void){
 
 	err = (int16_t) get_prox(SENSORRIGHT) - get_reference();
 	command = abs(K_P*err);
-	if(err<-40){//faire prev error
+	//if there's a space on the right wall, the motors should stop and move straight forward to prevent an incoherent behaviour
+	if(err<-40){
 		right_motor_set_speed(0);
 		left_motor_set_speed(0);
 		move_forward_smallstep();
