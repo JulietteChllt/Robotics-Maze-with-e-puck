@@ -8,9 +8,6 @@
 #define THRESHOLD_CLOSE_OBSTACLE 	100 							//adapted depending on ambient light
 #define THRESHOLD_WALL_IN_FRONT 	THRESHOLD_CLOSE_OBSTACLE+80
 #define STABILITY_THRESHOLD 		20
-#define QUARTER_TURN 				310
-#define SMALL_STEP_FORWARD 			500
-#define SMALL_STEP_BACKWARD 		300
 
 //Starts the thread
 void controle_start(void);
@@ -33,8 +30,8 @@ uint8_t get_free_space_left(void);
 //Return 0 if the sensor detects a wall on its right , 1 otherwise
 uint8_t get_free_space_right(void);
 
-// Computes the reference for the wall to follow
-void do_new_reference(uint8_t sensor);
+// Computes the reference for the wall to follow ie the right wall
+void do_new_reference(void);
 
 //Getter for the variable_reference
 int get_reference(void);

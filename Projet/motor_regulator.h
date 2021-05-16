@@ -3,12 +3,15 @@
 
 #define K_P							5
 #define WORKING_SPEED 				300
+#define QUARTER_TURN 				310
+#define SMALL_STEP_FORWARD 			500
+#define SMALL_STEP_BACKWARD 		300
 
 //Creates the motor regulator thread
 void motor_regulator_start(void);
 
 //Makes the robot follow the wall on it's right
-int16_t follow_wall(int16_t prev_err);
+void follow_wall(void);
 
 //Turns the robot 90° clockwise
 void turn_clockwise(void);

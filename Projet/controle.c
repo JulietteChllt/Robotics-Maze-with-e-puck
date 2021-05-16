@@ -2,7 +2,6 @@
 #include "hal.h"
 #include <usbcfg.h>
 #include "stdio.h"
-#include "chprintf.h"
 #include <main.h>
 #include "sensors/proximity.h"
 #include "controle.h"
@@ -36,7 +35,7 @@ static THD_FUNCTION(Controle, arg){
 
 		//Computes the reference to follow the right wall
 		while(!did_ref){
-			do_new_reference(SENSORRIGHT);
+			do_new_reference();
 			new_ref=variable_reference;
 			if(new_ref>= STABILITY_THRESHOLD && abs(new_ref-old_ref)<STABILITY_THRESHOLD)
 				did_ref=1;
@@ -47,7 +46,6 @@ static THD_FUNCTION(Controle, arg){
 		prev_left = new_left;
 		prev_right = new_right;
 
-		//chprintf((BaseSequentialStream *) &SDU1, "dir possibible =%d front =%d left=%d right=%d\n",get_possible_directions(),new_front,new_left,new_right);
 		chThdSleepMilliseconds(5);
 	}
 }
@@ -84,8 +82,8 @@ uint8_t get_free_space_right(void){
 	return get_free_space(SENSORRIGHT);
 }
 
-void do_new_reference(uint8_t sensor){
-	variable_reference=get_prox(sensor);
+void do_new_reference(void){
+	variable_reference=get_prox(SENSORRIGHT);
 }
 
 int get_reference(void){

@@ -22,7 +22,6 @@ static THD_FUNCTION(MotorRegulator, arg) {
 
 	systime_t time;
 
-	int16_t prev_err=0;
 	uint8_t dir_left_possible = 0;
 	uint8_t dir_front_possible = 0;
 	uint8_t dir_right_possible = 0;
@@ -69,7 +68,7 @@ static THD_FUNCTION(MotorRegulator, arg) {
 		if(nb_possible_direction==1){
 
 			if(get_free_space_front()==1 && get_direction_changed()==0){
-				prev_err = follow_wall(prev_err);
+				follow_wall();
 			}
 			else{
 				right_motor_set_speed(0);
@@ -79,12 +78,12 @@ static THD_FUNCTION(MotorRegulator, arg) {
 					move_forward_smallstep();
 					turn_counterclockwise();
 					move_forward_smallstep();
-					do_new_reference(SENSORRIGHT);
+					do_new_reference();
 				}
 				else if(get_free_space_right()){
 					turn_clockwise();
 					move_forward_smallstep();
-					do_new_reference(SENSORRIGHT);
+					do_new_reference();
 				}
 			}
 
@@ -114,7 +113,7 @@ static THD_FUNCTION(MotorRegulator, arg) {
 					break;
 				}
 				move_forward_smallstep();
-				do_new_reference(SENSORRIGHT);
+				do_new_reference();
 			}
 
 			else if(dir_left_possible==0){
@@ -139,7 +138,7 @@ static THD_FUNCTION(MotorRegulator, arg) {
 				}
 				move_forward_smallstep();
 				if(!get_free_space_right())
-					do_new_reference(SENSORRIGHT);
+					do_new_reference();
 
 			}
 			else if(dir_right_possible==0){
@@ -165,7 +164,7 @@ static THD_FUNCTION(MotorRegulator, arg) {
 				}
 				move_forward_smallstep();
 				if(!get_free_space_right())
-					do_new_reference(SENSORRIGHT);
+					do_new_reference();
 			}
 		}
 
@@ -182,7 +181,7 @@ void motor_regulator_start(void){
 	chThdCreateStatic(waMotorRegulator, sizeof(waMotorRegulator), NORMALPRIO, MotorRegulator, NULL);
 }
 
-int16_t follow_wall(int16_t prev_err){
+void follow_wall(void){
 	int16_t err=0;
 	int16_t command=0;
 
@@ -191,7 +190,6 @@ int16_t follow_wall(int16_t prev_err){
 	if(err<-40){//faire prev error
 		right_motor_set_speed(0);
 		left_motor_set_speed(0);
-
 		move_forward_smallstep();
 	}
 	// if the robot is too far from the right wall, it should increase it's left motor speed proportionately
@@ -204,9 +202,6 @@ int16_t follow_wall(int16_t prev_err){
 		right_motor_set_speed(WORKING_SPEED + command);
 		left_motor_set_speed(WORKING_SPEED);
 	}
-	prev_err=err;
-
-	return prev_err;
 }
 
 void turn_clockwise(void){
